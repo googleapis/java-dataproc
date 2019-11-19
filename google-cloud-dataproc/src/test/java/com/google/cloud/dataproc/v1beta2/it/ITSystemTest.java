@@ -87,7 +87,6 @@ public class ITSystemTest {
 
   @AfterClass
   public static void afterClass() {
-
     /** delete cluster */
     clusterClient.deleteClusterAsync(PROJECT_ID, CLUSTER_REGION, CLUSTER_NAME);
     clusterClient.close();

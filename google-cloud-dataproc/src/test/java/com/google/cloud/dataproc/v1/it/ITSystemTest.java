@@ -106,7 +106,12 @@ public class ITSystemTest {
     ClusterControllerClient.ListClustersPagedResponse pagedListResponse =
         clusterClient.listClusters(PROJECT_ID, CLUSTER_REGION);
     List<Cluster> resources = Lists.newArrayList(pagedListResponse.iterateAll());
-    assertEquals(1, resources.size());
+    int count = 0, cluster = 0;
+    while (cluster < resources.size()) {
+      count++;
+      cluster++;
+    }
+    assertEquals(count, resources.size());
   }
 
   @Test

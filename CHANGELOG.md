@@ -1,5 +1,17 @@
 # Changelog
 
+### [0.119.1](https://www.github.com/googleapis/java-dataproc/compare/v0.119.0...v0.119.1) (2020-02-18)
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-core to v1.92.5 ([574c5c5](https://www.github.com/googleapis/java-dataproc/commit/574c5c55978b3930ac083c941fba4df251959084))
+
+
+### Documentation
+
+* **regen:** update sample code to set total timeout, add API client header test ([9d7dddc](https://www.github.com/googleapis/java-dataproc/commit/9d7dddc630a1b4c2d1b8330fdefd2297ac802019))
+
 ## [0.119.0](https://www.github.com/googleapis/java-dataproc/compare/v0.118.1...v0.119.0) (2020-02-04)
 
 

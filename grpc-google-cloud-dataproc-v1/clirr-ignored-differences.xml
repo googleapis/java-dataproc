@@ -4,7 +4,7 @@
   <difference>
     <!-- TODO: remove after 0.120.1 released -->
     <differenceType>6001</differenceType>
-    <className>com/google/cloud/dataproc/v1beta2/*Grpc</className>
+    <className>com/google/cloud/dataproc/v1/*Grpc</className>
     <field>METHOD_*</field>
   </difference>
 </differences>

@@ -367,10 +367,10 @@ public class ClusterControllerStubSettings extends StubSettings<ClusterControlle
               .setInitialRetryDelay(Duration.ofMillis(100L))
               .setRetryDelayMultiplier(1.3)
               .setMaxRetryDelay(Duration.ofMillis(60000L))
-              .setInitialRpcTimeout(Duration.ofMillis(10000L))
+              .setInitialRpcTimeout(Duration.ofMillis(20000L))
               .setRpcTimeoutMultiplier(1.0)
-              .setMaxRpcTimeout(Duration.ofMillis(10000L))
-              .setTotalTimeout(Duration.ofMillis(300000L))
+              .setMaxRpcTimeout(Duration.ofMillis(20000L))
+              .setTotalTimeout(Duration.ofMillis(600000L))
               .build();
       definitions.put("default", settings);
       RETRY_PARAM_DEFINITIONS = definitions.build();
@@ -470,13 +470,13 @@ public class ClusterControllerStubSettings extends StubSettings<ClusterControlle
           .setPollingAlgorithm(
               OperationTimedPollAlgorithm.create(
                   RetrySettings.newBuilder()
-                      .setInitialRetryDelay(Duration.ofMillis(1000L))
-                      .setRetryDelayMultiplier(2.0)
-                      .setMaxRetryDelay(Duration.ofMillis(10000L))
+                      .setInitialRetryDelay(Duration.ofMillis(500L))
+                      .setRetryDelayMultiplier(1.5)
+                      .setMaxRetryDelay(Duration.ofMillis(5000L))
                       .setInitialRpcTimeout(Duration.ZERO) // ignored
                       .setRpcTimeoutMultiplier(1.0) // ignored
                       .setMaxRpcTimeout(Duration.ZERO) // ignored
-                      .setTotalTimeout(Duration.ofMillis(900000L))
+                      .setTotalTimeout(Duration.ofMillis(300000L))
                       .build()));
       builder
           .updateClusterOperationSettings()
@@ -493,13 +493,13 @@ public class ClusterControllerStubSettings extends StubSettings<ClusterControlle
           .setPollingAlgorithm(
               OperationTimedPollAlgorithm.create(
                   RetrySettings.newBuilder()
-                      .setInitialRetryDelay(Duration.ofMillis(1000L))
-                      .setRetryDelayMultiplier(2.0)
-                      .setMaxRetryDelay(Duration.ofMillis(10000L))
+                      .setInitialRetryDelay(Duration.ofMillis(500L))
+                      .setRetryDelayMultiplier(1.5)
+                      .setMaxRetryDelay(Duration.ofMillis(5000L))
                       .setInitialRpcTimeout(Duration.ZERO) // ignored
                       .setRpcTimeoutMultiplier(1.0) // ignored
                       .setMaxRpcTimeout(Duration.ZERO) // ignored
-                      .setTotalTimeout(Duration.ofMillis(900000L))
+                      .setTotalTimeout(Duration.ofMillis(300000L))
                       .build()));
       builder
           .deleteClusterOperationSettings()
@@ -516,13 +516,13 @@ public class ClusterControllerStubSettings extends StubSettings<ClusterControlle
           .setPollingAlgorithm(
               OperationTimedPollAlgorithm.create(
                   RetrySettings.newBuilder()
-                      .setInitialRetryDelay(Duration.ofMillis(1000L))
-                      .setRetryDelayMultiplier(2.0)
-                      .setMaxRetryDelay(Duration.ofMillis(10000L))
+                      .setInitialRetryDelay(Duration.ofMillis(500L))
+                      .setRetryDelayMultiplier(1.5)
+                      .setMaxRetryDelay(Duration.ofMillis(5000L))
                       .setInitialRpcTimeout(Duration.ZERO) // ignored
                       .setRpcTimeoutMultiplier(1.0) // ignored
                       .setMaxRpcTimeout(Duration.ZERO) // ignored
-                      .setTotalTimeout(Duration.ofMillis(900000L))
+                      .setTotalTimeout(Duration.ofMillis(300000L))
                       .build()));
       builder
           .diagnoseClusterOperationSettings()
@@ -539,13 +539,13 @@ public class ClusterControllerStubSettings extends StubSettings<ClusterControlle
           .setPollingAlgorithm(
               OperationTimedPollAlgorithm.create(
                   RetrySettings.newBuilder()
-                      .setInitialRetryDelay(Duration.ofMillis(1000L))
-                      .setRetryDelayMultiplier(2.0)
-                      .setMaxRetryDelay(Duration.ofMillis(10000L))
+                      .setInitialRetryDelay(Duration.ofMillis(500L))
+                      .setRetryDelayMultiplier(1.5)
+                      .setMaxRetryDelay(Duration.ofMillis(5000L))
                       .setInitialRpcTimeout(Duration.ZERO) // ignored
                       .setRpcTimeoutMultiplier(1.0) // ignored
                       .setMaxRpcTimeout(Duration.ZERO) // ignored
-                      .setTotalTimeout(Duration.ofMillis(30000L))
+                      .setTotalTimeout(Duration.ofMillis(300000L))
                       .build()));
 
       return builder;

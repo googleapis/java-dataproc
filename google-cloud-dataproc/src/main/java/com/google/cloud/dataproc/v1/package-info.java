@@ -28,9 +28,9 @@
  * <pre>
  * <code>
  * try (AutoscalingPolicyServiceClient autoscalingPolicyServiceClient = AutoscalingPolicyServiceClient.create()) {
- *   String formattedParent = RegionName.format("[PROJECT]", "[REGION]");
+ *   RegionName parent = RegionName.of("[PROJECT]", "[REGION]");
  *   AutoscalingPolicy policy = AutoscalingPolicy.newBuilder().build();
- *   AutoscalingPolicy response = autoscalingPolicyServiceClient.createAutoscalingPolicy(formattedParent, policy);
+ *   AutoscalingPolicy response = autoscalingPolicyServiceClient.createAutoscalingPolicy(parent, policy);
  * }
  * </code>
  * </pre>

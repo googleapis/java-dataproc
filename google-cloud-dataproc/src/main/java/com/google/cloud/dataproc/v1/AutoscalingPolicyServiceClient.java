@@ -44,9 +44,8 @@ import javax.annotation.Generated;
  * <pre>
  * <code>
  * try (AutoscalingPolicyServiceClient autoscalingPolicyServiceClient = AutoscalingPolicyServiceClient.create()) {
- *   RegionName parent = RegionName.of("[PROJECT]", "[REGION]");
  *   AutoscalingPolicy policy = AutoscalingPolicy.newBuilder().build();
- *   AutoscalingPolicy response = autoscalingPolicyServiceClient.createAutoscalingPolicy(parent, policy);
+ *   AutoscalingPolicy response = autoscalingPolicyServiceClient.updateAutoscalingPolicy(policy);
  * }
  * </code>
  * </pre>
@@ -156,6 +155,80 @@ public class AutoscalingPolicyServiceClient implements BackgroundResource {
   @BetaApi("A restructuring of stub classes is planned, so this may break in the future")
   public AutoscalingPolicyServiceStub getStub() {
     return stub;
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Updates (replaces) autoscaling policy.
+   *
+   * <p>Disabled check for update_mask, because all updates will be full replacements.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (AutoscalingPolicyServiceClient autoscalingPolicyServiceClient = AutoscalingPolicyServiceClient.create()) {
+   *   AutoscalingPolicy policy = AutoscalingPolicy.newBuilder().build();
+   *   AutoscalingPolicy response = autoscalingPolicyServiceClient.updateAutoscalingPolicy(policy);
+   * }
+   * </code></pre>
+   *
+   * @param policy Required. The updated autoscaling policy.
+   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
+   */
+  public final AutoscalingPolicy updateAutoscalingPolicy(AutoscalingPolicy policy) {
+    UpdateAutoscalingPolicyRequest request =
+        UpdateAutoscalingPolicyRequest.newBuilder().setPolicy(policy).build();
+    return updateAutoscalingPolicy(request);
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Updates (replaces) autoscaling policy.
+   *
+   * <p>Disabled check for update_mask, because all updates will be full replacements.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (AutoscalingPolicyServiceClient autoscalingPolicyServiceClient = AutoscalingPolicyServiceClient.create()) {
+   *   AutoscalingPolicy policy = AutoscalingPolicy.newBuilder().build();
+   *   UpdateAutoscalingPolicyRequest request = UpdateAutoscalingPolicyRequest.newBuilder()
+   *     .setPolicy(policy)
+   *     .build();
+   *   AutoscalingPolicy response = autoscalingPolicyServiceClient.updateAutoscalingPolicy(request);
+   * }
+   * </code></pre>
+   *
+   * @param request The request object containing all of the parameters for the API call.
+   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
+   */
+  public final AutoscalingPolicy updateAutoscalingPolicy(UpdateAutoscalingPolicyRequest request) {
+    return updateAutoscalingPolicyCallable().call(request);
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Updates (replaces) autoscaling policy.
+   *
+   * <p>Disabled check for update_mask, because all updates will be full replacements.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (AutoscalingPolicyServiceClient autoscalingPolicyServiceClient = AutoscalingPolicyServiceClient.create()) {
+   *   AutoscalingPolicy policy = AutoscalingPolicy.newBuilder().build();
+   *   UpdateAutoscalingPolicyRequest request = UpdateAutoscalingPolicyRequest.newBuilder()
+   *     .setPolicy(policy)
+   *     .build();
+   *   ApiFuture&lt;AutoscalingPolicy&gt; future = autoscalingPolicyServiceClient.updateAutoscalingPolicyCallable().futureCall(request);
+   *   // Do something
+   *   AutoscalingPolicy response = future.get();
+   * }
+   * </code></pre>
+   */
+  public final UnaryCallable<UpdateAutoscalingPolicyRequest, AutoscalingPolicy>
+      updateAutoscalingPolicyCallable() {
+    return stub.updateAutoscalingPolicyCallable();
   }
 
   // AUTO-GENERATED DOCUMENTATION AND METHOD
@@ -297,80 +370,6 @@ public class AutoscalingPolicyServiceClient implements BackgroundResource {
   public final UnaryCallable<CreateAutoscalingPolicyRequest, AutoscalingPolicy>
       createAutoscalingPolicyCallable() {
     return stub.createAutoscalingPolicyCallable();
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Updates (replaces) autoscaling policy.
-   *
-   * <p>Disabled check for update_mask, because all updates will be full replacements.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (AutoscalingPolicyServiceClient autoscalingPolicyServiceClient = AutoscalingPolicyServiceClient.create()) {
-   *   AutoscalingPolicy policy = AutoscalingPolicy.newBuilder().build();
-   *   AutoscalingPolicy response = autoscalingPolicyServiceClient.updateAutoscalingPolicy(policy);
-   * }
-   * </code></pre>
-   *
-   * @param policy Required. The updated autoscaling policy.
-   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
-   */
-  public final AutoscalingPolicy updateAutoscalingPolicy(AutoscalingPolicy policy) {
-    UpdateAutoscalingPolicyRequest request =
-        UpdateAutoscalingPolicyRequest.newBuilder().setPolicy(policy).build();
-    return updateAutoscalingPolicy(request);
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Updates (replaces) autoscaling policy.
-   *
-   * <p>Disabled check for update_mask, because all updates will be full replacements.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (AutoscalingPolicyServiceClient autoscalingPolicyServiceClient = AutoscalingPolicyServiceClient.create()) {
-   *   AutoscalingPolicy policy = AutoscalingPolicy.newBuilder().build();
-   *   UpdateAutoscalingPolicyRequest request = UpdateAutoscalingPolicyRequest.newBuilder()
-   *     .setPolicy(policy)
-   *     .build();
-   *   AutoscalingPolicy response = autoscalingPolicyServiceClient.updateAutoscalingPolicy(request);
-   * }
-   * </code></pre>
-   *
-   * @param request The request object containing all of the parameters for the API call.
-   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
-   */
-  public final AutoscalingPolicy updateAutoscalingPolicy(UpdateAutoscalingPolicyRequest request) {
-    return updateAutoscalingPolicyCallable().call(request);
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Updates (replaces) autoscaling policy.
-   *
-   * <p>Disabled check for update_mask, because all updates will be full replacements.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (AutoscalingPolicyServiceClient autoscalingPolicyServiceClient = AutoscalingPolicyServiceClient.create()) {
-   *   AutoscalingPolicy policy = AutoscalingPolicy.newBuilder().build();
-   *   UpdateAutoscalingPolicyRequest request = UpdateAutoscalingPolicyRequest.newBuilder()
-   *     .setPolicy(policy)
-   *     .build();
-   *   ApiFuture&lt;AutoscalingPolicy&gt; future = autoscalingPolicyServiceClient.updateAutoscalingPolicyCallable().futureCall(request);
-   *   // Do something
-   *   AutoscalingPolicy response = future.get();
-   * }
-   * </code></pre>
-   */
-  public final UnaryCallable<UpdateAutoscalingPolicyRequest, AutoscalingPolicy>
-      updateAutoscalingPolicyCallable() {
-    return stub.updateAutoscalingPolicyCallable();
   }
 
   // AUTO-GENERATED DOCUMENTATION AND METHOD

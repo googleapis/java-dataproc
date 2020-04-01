@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.120.1](https://www.github.com/googleapis/java-dataproc/compare/v0.120.0...v0.120.1) (2020-04-01)
+
+
+### Dependencies
+
+* update dependency com.google.api:api-common to v1.9.0 ([#113](https://www.github.com/googleapis/java-dataproc/issues/113)) ([34b0ec6](https://www.github.com/googleapis/java-dataproc/commit/34b0ec60c21d76217d45b29410c1472ff8869ba0))
+
 ## [0.120.0](https://www.github.com/googleapis/java-dataproc/compare/v0.119.0...v0.120.0) (2020-03-13)
 
 

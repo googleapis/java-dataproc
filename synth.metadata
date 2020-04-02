@@ -1,20 +1,21 @@
 {
-  "updateTime": "2020-04-02T21:47:22.884215Z",
+  "updateTime": "2020-04-02T21:49:10.182349Z",
   "sources": [
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "aba342359b6743353195ca53f944fe71e6fb6cd4",
-        "internalRef": "304207684"
+        "sha": "75047719f704d61f405cac6d7439637ab36c1232",
+        "internalRef": "304305096"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "aba342359b6743353195ca53f944fe71e6fb6cd4",
-        "internalRef": "304207684"
+        "sha": "75047719f704d61f405cac6d7439637ab36c1232",
+        "internalRef": "304305096",
+        "log": "75047719f704d61f405cac6d7439637ab36c1232\nfix Dataproc: add missing `REQUIRED` annotation.\n\nPiperOrigin-RevId: 304305096\n\n7e1b880fd5d477176cf9b0bb9b137b9bea56e787\nAdd Ruby/PHP namespace options\n\nPiperOrigin-RevId: 304288402\n\n"
       }
     },
     {

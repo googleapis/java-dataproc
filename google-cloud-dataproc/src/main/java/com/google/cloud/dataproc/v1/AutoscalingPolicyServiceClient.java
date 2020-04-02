@@ -335,8 +335,10 @@ public class AutoscalingPolicyServiceClient implements BackgroundResource {
    * <pre><code>
    * try (AutoscalingPolicyServiceClient autoscalingPolicyServiceClient = AutoscalingPolicyServiceClient.create()) {
    *   RegionName parent = RegionName.of("[PROJECT]", "[REGION]");
+   *   AutoscalingPolicy policy = AutoscalingPolicy.newBuilder().build();
    *   CreateAutoscalingPolicyRequest request = CreateAutoscalingPolicyRequest.newBuilder()
    *     .setParent(parent.toString())
+   *     .setPolicy(policy)
    *     .build();
    *   AutoscalingPolicy response = autoscalingPolicyServiceClient.createAutoscalingPolicy(request);
    * }
@@ -358,8 +360,10 @@ public class AutoscalingPolicyServiceClient implements BackgroundResource {
    * <pre><code>
    * try (AutoscalingPolicyServiceClient autoscalingPolicyServiceClient = AutoscalingPolicyServiceClient.create()) {
    *   RegionName parent = RegionName.of("[PROJECT]", "[REGION]");
+   *   AutoscalingPolicy policy = AutoscalingPolicy.newBuilder().build();
    *   CreateAutoscalingPolicyRequest request = CreateAutoscalingPolicyRequest.newBuilder()
    *     .setParent(parent.toString())
+   *     .setPolicy(policy)
    *     .build();
    *   ApiFuture&lt;AutoscalingPolicy&gt; future = autoscalingPolicyServiceClient.createAutoscalingPolicyCallable().futureCall(request);
    *   // Do something

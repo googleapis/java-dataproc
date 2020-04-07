@@ -101,12 +101,14 @@ public class JobControllerClientTest {
     String driverOutputResourceUri = "driverOutputResourceUri-542229086";
     String driverControlFilesUri = "driverControlFilesUri207057643";
     String jobUuid = "jobUuid-1615012099";
+    boolean done = true;
     Job expectedResponse =
         Job.newBuilder()
             .setSubmittedBy(submittedBy)
             .setDriverOutputResourceUri(driverOutputResourceUri)
             .setDriverControlFilesUri(driverControlFilesUri)
             .setJobUuid(jobUuid)
+            .setDone(done)
             .build();
     mockJobController.addResponse(expectedResponse);
 
@@ -155,12 +157,14 @@ public class JobControllerClientTest {
     String driverOutputResourceUri = "driverOutputResourceUri-542229086";
     String driverControlFilesUri = "driverControlFilesUri207057643";
     String jobUuid = "jobUuid-1615012099";
+    boolean done = true;
     Job expectedResponse =
         Job.newBuilder()
             .setSubmittedBy(submittedBy)
             .setDriverOutputResourceUri(driverOutputResourceUri)
             .setDriverControlFilesUri(driverControlFilesUri)
             .setJobUuid(jobUuid)
+            .setDone(done)
             .build();
     mockJobController.addResponse(expectedResponse);
 
@@ -305,12 +309,14 @@ public class JobControllerClientTest {
     String driverOutputResourceUri = "driverOutputResourceUri-542229086";
     String driverControlFilesUri = "driverControlFilesUri207057643";
     String jobUuid = "jobUuid-1615012099";
+    boolean done = true;
     Job expectedResponse =
         Job.newBuilder()
             .setSubmittedBy(submittedBy)
             .setDriverOutputResourceUri(driverOutputResourceUri)
             .setDriverControlFilesUri(driverControlFilesUri)
             .setJobUuid(jobUuid)
+            .setDone(done)
             .build();
     mockJobController.addResponse(expectedResponse);
 
@@ -381,12 +387,14 @@ public class JobControllerClientTest {
     String driverOutputResourceUri = "driverOutputResourceUri-542229086";
     String driverControlFilesUri = "driverControlFilesUri207057643";
     String jobUuid = "jobUuid-1615012099";
+    boolean done = true;
     Job expectedResponse =
         Job.newBuilder()
             .setSubmittedBy(submittedBy)
             .setDriverOutputResourceUri(driverOutputResourceUri)
             .setDriverControlFilesUri(driverControlFilesUri)
             .setJobUuid(jobUuid)
+            .setDone(done)
             .build();
     mockJobController.addResponse(expectedResponse);
 
@@ -478,12 +486,14 @@ public class JobControllerClientTest {
     String driverOutputResourceUri = "driverOutputResourceUri-542229086";
     String driverControlFilesUri = "driverControlFilesUri207057643";
     String jobUuid = "jobUuid-1615012099";
+    boolean done = true;
     Job expectedResponse =
         Job.newBuilder()
             .setSubmittedBy(submittedBy)
             .setDriverOutputResourceUri(driverOutputResourceUri)
             .setDriverControlFilesUri(driverControlFilesUri)
             .setJobUuid(jobUuid)
+            .setDone(done)
             .build();
     Operation resultOperation =
         Operation.newBuilder()

@@ -202,7 +202,9 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
    * The autoscaling policy to create.
    * </pre>
    *
-   * <code>.google.cloud.dataproc.v1.AutoscalingPolicy policy = 2;</code>
+   * <code>
+   * .google.cloud.dataproc.v1.AutoscalingPolicy policy = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the policy field is set.
    */
@@ -216,7 +218,9 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
    * The autoscaling policy to create.
    * </pre>
    *
-   * <code>.google.cloud.dataproc.v1.AutoscalingPolicy policy = 2;</code>
+   * <code>
+   * .google.cloud.dataproc.v1.AutoscalingPolicy policy = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The policy.
    */
@@ -232,7 +236,9 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
    * The autoscaling policy to create.
    * </pre>
    *
-   * <code>.google.cloud.dataproc.v1.AutoscalingPolicy policy = 2;</code>
+   * <code>
+   * .google.cloud.dataproc.v1.AutoscalingPolicy policy = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   public com.google.cloud.dataproc.v1.AutoscalingPolicyOrBuilder getPolicyOrBuilder() {
     return getPolicy();
@@ -749,7 +755,9 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      * The autoscaling policy to create.
      * </pre>
      *
-     * <code>.google.cloud.dataproc.v1.AutoscalingPolicy policy = 2;</code>
+     * <code>
+     * .google.cloud.dataproc.v1.AutoscalingPolicy policy = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return Whether the policy field is set.
      */
@@ -763,7 +771,9 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      * The autoscaling policy to create.
      * </pre>
      *
-     * <code>.google.cloud.dataproc.v1.AutoscalingPolicy policy = 2;</code>
+     * <code>
+     * .google.cloud.dataproc.v1.AutoscalingPolicy policy = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return The policy.
      */
@@ -783,7 +793,9 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      * The autoscaling policy to create.
      * </pre>
      *
-     * <code>.google.cloud.dataproc.v1.AutoscalingPolicy policy = 2;</code>
+     * <code>
+     * .google.cloud.dataproc.v1.AutoscalingPolicy policy = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setPolicy(com.google.cloud.dataproc.v1.AutoscalingPolicy value) {
       if (policyBuilder_ == null) {
@@ -805,7 +817,9 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      * The autoscaling policy to create.
      * </pre>
      *
-     * <code>.google.cloud.dataproc.v1.AutoscalingPolicy policy = 2;</code>
+     * <code>
+     * .google.cloud.dataproc.v1.AutoscalingPolicy policy = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setPolicy(
         com.google.cloud.dataproc.v1.AutoscalingPolicy.Builder builderForValue) {
@@ -825,7 +839,9 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      * The autoscaling policy to create.
      * </pre>
      *
-     * <code>.google.cloud.dataproc.v1.AutoscalingPolicy policy = 2;</code>
+     * <code>
+     * .google.cloud.dataproc.v1.AutoscalingPolicy policy = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder mergePolicy(com.google.cloud.dataproc.v1.AutoscalingPolicy value) {
       if (policyBuilder_ == null) {
@@ -851,7 +867,9 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      * The autoscaling policy to create.
      * </pre>
      *
-     * <code>.google.cloud.dataproc.v1.AutoscalingPolicy policy = 2;</code>
+     * <code>
+     * .google.cloud.dataproc.v1.AutoscalingPolicy policy = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder clearPolicy() {
       if (policyBuilder_ == null) {
@@ -871,7 +889,9 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      * The autoscaling policy to create.
      * </pre>
      *
-     * <code>.google.cloud.dataproc.v1.AutoscalingPolicy policy = 2;</code>
+     * <code>
+     * .google.cloud.dataproc.v1.AutoscalingPolicy policy = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.cloud.dataproc.v1.AutoscalingPolicy.Builder getPolicyBuilder() {
 
@@ -885,7 +905,9 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      * The autoscaling policy to create.
      * </pre>
      *
-     * <code>.google.cloud.dataproc.v1.AutoscalingPolicy policy = 2;</code>
+     * <code>
+     * .google.cloud.dataproc.v1.AutoscalingPolicy policy = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.cloud.dataproc.v1.AutoscalingPolicyOrBuilder getPolicyOrBuilder() {
       if (policyBuilder_ != null) {
@@ -903,7 +925,9 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      * The autoscaling policy to create.
      * </pre>
      *
-     * <code>.google.cloud.dataproc.v1.AutoscalingPolicy policy = 2;</code>
+     * <code>
+     * .google.cloud.dataproc.v1.AutoscalingPolicy policy = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.cloud.dataproc.v1.AutoscalingPolicy,

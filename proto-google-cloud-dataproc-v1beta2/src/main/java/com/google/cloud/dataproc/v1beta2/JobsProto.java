@@ -136,6 +136,10 @@ public final class JobsProto {
   static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_google_cloud_dataproc_v1beta2_JobScheduling_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_google_cloud_dataproc_v1beta2_JobMetadata_descriptor;
+  static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_google_cloud_dataproc_v1beta2_JobMetadata_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
       internal_static_google_cloud_dataproc_v1beta2_SubmitJobRequest_descriptor;
   static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_google_cloud_dataproc_v1beta2_SubmitJobRequest_fieldAccessorTable;
@@ -315,67 +319,78 @@ public final class JobsProto {
           + "b_uuid\030\026 \001(\tB\003\340A\003\032-\n\013LabelsEntry\022\013\n\003key\030"
           + "\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001B\n\n\010type_job\"3\n\r"
           + "JobScheduling\022\"\n\025max_failures_per_hour\030\001"
-          + " \001(\005B\003\340A\001\"\217\001\n\020SubmitJobRequest\022\027\n\nprojec"
-          + "t_id\030\001 \001(\tB\003\340A\002\022\023\n\006region\030\003 \001(\tB\003\340A\002\0224\n\003"
-          + "job\030\002 \001(\0132\".google.cloud.dataproc.v1beta"
-          + "2.JobB\003\340A\002\022\027\n\nrequest_id\030\004 \001(\tB\003\340A\001\"R\n\rG"
-          + "etJobRequest\022\027\n\nproject_id\030\001 \001(\tB\003\340A\002\022\023\n"
-          + "\006region\030\003 \001(\tB\003\340A\002\022\023\n\006job_id\030\002 \001(\tB\003\340A\002\""
-          + "\270\002\n\017ListJobsRequest\022\027\n\nproject_id\030\001 \001(\tB"
-          + "\003\340A\002\022\023\n\006region\030\006 \001(\tB\003\340A\002\022\026\n\tpage_size\030\002"
-          + " \001(\005B\003\340A\001\022\027\n\npage_token\030\003 \001(\tB\003\340A\001\022\031\n\014cl"
-          + "uster_name\030\004 \001(\tB\003\340A\001\022^\n\021job_state_match"
-          + "er\030\005 \001(\0162>.google.cloud.dataproc.v1beta2"
-          + ".ListJobsRequest.JobStateMatcherB\003\340A\001\022\023\n"
-          + "\006filter\030\007 \001(\tB\003\340A\001\"6\n\017JobStateMatcher\022\007\n"
-          + "\003ALL\020\000\022\n\n\006ACTIVE\020\001\022\016\n\nNON_ACTIVE\020\002\"\301\001\n\020U"
-          + "pdateJobRequest\022\027\n\nproject_id\030\001 \001(\tB\003\340A\002"
-          + "\022\023\n\006region\030\002 \001(\tB\003\340A\002\022\023\n\006job_id\030\003 \001(\tB\003\340"
-          + "A\002\0224\n\003job\030\004 \001(\0132\".google.cloud.dataproc."
-          + "v1beta2.JobB\003\340A\002\0224\n\013update_mask\030\005 \001(\0132\032."
-          + "google.protobuf.FieldMaskB\003\340A\002\"g\n\020ListJo"
-          + "bsResponse\0225\n\004jobs\030\001 \003(\0132\".google.cloud."
-          + "dataproc.v1beta2.JobB\003\340A\003\022\034\n\017next_page_t"
-          + "oken\030\002 \001(\tB\003\340A\001\"U\n\020CancelJobRequest\022\027\n\np"
-          + "roject_id\030\001 \001(\tB\003\340A\002\022\023\n\006region\030\003 \001(\tB\003\340A"
-          + "\002\022\023\n\006job_id\030\002 \001(\tB\003\340A\002\"U\n\020DeleteJobReque"
-          + "st\022\027\n\nproject_id\030\001 \001(\tB\003\340A\002\022\023\n\006region\030\003 "
-          + "\001(\tB\003\340A\002\022\023\n\006job_id\030\002 \001(\tB\003\340A\0022\373\t\n\rJobCon"
-          + "troller\022\302\001\n\tSubmitJob\022/.google.cloud.dat"
-          + "aproc.v1beta2.SubmitJobRequest\032\".google."
-          + "cloud.dataproc.v1beta2.Job\"`\202\323\344\223\002@\";/v1b"
-          + "eta2/projects/{project_id}/regions/{regi"
-          + "on}/jobs:submit:\001*\332A\027project_id, region,"
-          + " job\022\276\001\n\006GetJob\022,.google.cloud.dataproc."
-          + "v1beta2.GetJobRequest\032\".google.cloud.dat"
-          + "aproc.v1beta2.Job\"b\202\323\344\223\002?\022=/v1beta2/proj"
-          + "ects/{project_id}/regions/{region}/jobs/"
-          + "{job_id}\332A\032project_id, region, job_id\022\333\001"
-          + "\n\010ListJobs\022..google.cloud.dataproc.v1bet"
-          + "a2.ListJobsRequest\032/.google.cloud.datapr"
-          + "oc.v1beta2.ListJobsResponse\"n\202\323\344\223\0026\0224/v1"
-          + "beta2/projects/{project_id}/regions/{reg"
-          + "ion}/jobs\332A\022project_id, region\332A\032project"
-          + "_id, region, filter\022\254\001\n\tUpdateJob\022/.goog"
-          + "le.cloud.dataproc.v1beta2.UpdateJobReque"
-          + "st\032\".google.cloud.dataproc.v1beta2.Job\"J"
-          + "\202\323\344\223\002D2=/v1beta2/projects/{project_id}/r"
-          + "egions/{region}/jobs/{job_id}:\003job\022\316\001\n\tC"
-          + "ancelJob\022/.google.cloud.dataproc.v1beta2"
-          + ".CancelJobRequest\032\".google.cloud.datapro"
-          + "c.v1beta2.Job\"l\202\323\344\223\002I\"D/v1beta2/projects"
-          + "/{project_id}/regions/{region}/jobs/{job"
-          + "_id}:cancel:\001*\332A\032project_id, region, job"
-          + "_id\022\270\001\n\tDeleteJob\022/.google.cloud.datapro"
-          + "c.v1beta2.DeleteJobRequest\032\026.google.prot"
-          + "obuf.Empty\"b\202\323\344\223\002?*=/v1beta2/projects/{p"
-          + "roject_id}/regions/{region}/jobs/{job_id"
-          + "}\332A\032project_id, region, job_id\032K\312A\027datap"
-          + "roc.googleapis.com\322A.https://www.googlea"
-          + "pis.com/auth/cloud-platformBw\n!com.googl"
-          + "e.cloud.dataproc.v1beta2B\tJobsProtoP\001ZEg"
-          + "oogle.golang.org/genproto/googleapis/clo"
-          + "ud/dataproc/v1beta2;dataprocb\006proto3"
+          + " \001(\005B\003\340A\001\"\263\001\n\013JobMetadata\022\023\n\006job_id\030\001 \001("
+          + "\tB\003\340A\003\022=\n\006status\030\002 \001(\0132(.google.cloud.da"
+          + "taproc.v1beta2.JobStatusB\003\340A\003\022\033\n\016operati"
+          + "on_type\030\003 \001(\tB\003\340A\003\0223\n\nstart_time\030\004 \001(\0132\032"
+          + ".google.protobuf.TimestampB\003\340A\003\"\217\001\n\020Subm"
+          + "itJobRequest\022\027\n\nproject_id\030\001 \001(\tB\003\340A\002\022\023\n"
+          + "\006region\030\003 \001(\tB\003\340A\002\0224\n\003job\030\002 \001(\0132\".google"
+          + ".cloud.dataproc.v1beta2.JobB\003\340A\002\022\027\n\nrequ"
+          + "est_id\030\004 \001(\tB\003\340A\001\"R\n\rGetJobRequest\022\027\n\npr"
+          + "oject_id\030\001 \001(\tB\003\340A\002\022\023\n\006region\030\003 \001(\tB\003\340A\002"
+          + "\022\023\n\006job_id\030\002 \001(\tB\003\340A\002\"\270\002\n\017ListJobsReques"
+          + "t\022\027\n\nproject_id\030\001 \001(\tB\003\340A\002\022\023\n\006region\030\006 \001"
+          + "(\tB\003\340A\002\022\026\n\tpage_size\030\002 \001(\005B\003\340A\001\022\027\n\npage_"
+          + "token\030\003 \001(\tB\003\340A\001\022\031\n\014cluster_name\030\004 \001(\tB\003"
+          + "\340A\001\022^\n\021job_state_matcher\030\005 \001(\0162>.google."
+          + "cloud.dataproc.v1beta2.ListJobsRequest.J"
+          + "obStateMatcherB\003\340A\001\022\023\n\006filter\030\007 \001(\tB\003\340A\001"
+          + "\"6\n\017JobStateMatcher\022\007\n\003ALL\020\000\022\n\n\006ACTIVE\020\001"
+          + "\022\016\n\nNON_ACTIVE\020\002\"\301\001\n\020UpdateJobRequest\022\027\n"
+          + "\nproject_id\030\001 \001(\tB\003\340A\002\022\023\n\006region\030\002 \001(\tB\003"
+          + "\340A\002\022\023\n\006job_id\030\003 \001(\tB\003\340A\002\0224\n\003job\030\004 \001(\0132\"."
+          + "google.cloud.dataproc.v1beta2.JobB\003\340A\002\0224"
+          + "\n\013update_mask\030\005 \001(\0132\032.google.protobuf.Fi"
+          + "eldMaskB\003\340A\002\"g\n\020ListJobsResponse\0225\n\004jobs"
+          + "\030\001 \003(\0132\".google.cloud.dataproc.v1beta2.J"
+          + "obB\003\340A\003\022\034\n\017next_page_token\030\002 \001(\tB\003\340A\001\"U\n"
+          + "\020CancelJobRequest\022\027\n\nproject_id\030\001 \001(\tB\003\340"
+          + "A\002\022\023\n\006region\030\003 \001(\tB\003\340A\002\022\023\n\006job_id\030\002 \001(\tB"
+          + "\003\340A\002\"U\n\020DeleteJobRequest\022\027\n\nproject_id\030\001"
+          + " \001(\tB\003\340A\002\022\023\n\006region\030\003 \001(\tB\003\340A\002\022\023\n\006job_id"
+          + "\030\002 \001(\tB\003\340A\0022\347\013\n\rJobController\022\302\001\n\tSubmit"
+          + "Job\022/.google.cloud.dataproc.v1beta2.Subm"
+          + "itJobRequest\032\".google.cloud.dataproc.v1b"
+          + "eta2.Job\"`\202\323\344\223\002@\";/v1beta2/projects/{pro"
+          + "ject_id}/regions/{region}/jobs:submit:\001*"
+          + "\332A\027project_id, region, job\022\351\001\n\024SubmitJob"
+          + "AsOperation\022/.google.cloud.dataproc.v1be"
+          + "ta2.SubmitJobRequest\032\035.google.longrunnin"
+          + "g.Operation\"\200\001\202\323\344\223\002K\"F/v1beta2/projects/"
+          + "{project_id}/regions/{region}/jobs:submi"
+          + "tAsOperation:\001*\332A\027project_id, region, jo"
+          + "b\312A\022\n\003Job\022\013JobMetadata\022\276\001\n\006GetJob\022,.goog"
+          + "le.cloud.dataproc.v1beta2.GetJobRequest\032"
+          + "\".google.cloud.dataproc.v1beta2.Job\"b\202\323\344"
+          + "\223\002?\022=/v1beta2/projects/{project_id}/regi"
+          + "ons/{region}/jobs/{job_id}\332A\032project_id,"
+          + " region, job_id\022\333\001\n\010ListJobs\022..google.cl"
+          + "oud.dataproc.v1beta2.ListJobsRequest\032/.g"
+          + "oogle.cloud.dataproc.v1beta2.ListJobsRes"
+          + "ponse\"n\202\323\344\223\0026\0224/v1beta2/projects/{projec"
+          + "t_id}/regions/{region}/jobs\332A\022project_id"
+          + ", region\332A\032project_id, region, filter\022\254\001"
+          + "\n\tUpdateJob\022/.google.cloud.dataproc.v1be"
+          + "ta2.UpdateJobRequest\032\".google.cloud.data"
+          + "proc.v1beta2.Job\"J\202\323\344\223\002D2=/v1beta2/proje"
+          + "cts/{project_id}/regions/{region}/jobs/{"
+          + "job_id}:\003job\022\316\001\n\tCancelJob\022/.google.clou"
+          + "d.dataproc.v1beta2.CancelJobRequest\032\".go"
+          + "ogle.cloud.dataproc.v1beta2.Job\"l\202\323\344\223\002I\""
+          + "D/v1beta2/projects/{project_id}/regions/"
+          + "{region}/jobs/{job_id}:cancel:\001*\332A\032proje"
+          + "ct_id, region, job_id\022\270\001\n\tDeleteJob\022/.go"
+          + "ogle.cloud.dataproc.v1beta2.DeleteJobReq"
+          + "uest\032\026.google.protobuf.Empty\"b\202\323\344\223\002?*=/v"
+          + "1beta2/projects/{project_id}/regions/{re"
+          + "gion}/jobs/{job_id}\332A\032project_id, region"
+          + ", job_id\032K\312A\027dataproc.googleapis.com\322A.h"
+          + "ttps://www.googleapis.com/auth/cloud-pla"
+          + "tformBw\n!com.google.cloud.dataproc.v1bet"
+          + "a2B\tJobsProtoP\001ZEgoogle.golang.org/genpr"
+          + "oto/googleapis/cloud/dataproc/v1beta2;da"
+          + "taprocb\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
@@ -671,8 +686,16 @@ public final class JobsProto {
             new java.lang.String[] {
               "MaxFailuresPerHour",
             });
-    internal_static_google_cloud_dataproc_v1beta2_SubmitJobRequest_descriptor =
+    internal_static_google_cloud_dataproc_v1beta2_JobMetadata_descriptor =
         getDescriptor().getMessageTypes().get(15);
+    internal_static_google_cloud_dataproc_v1beta2_JobMetadata_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_google_cloud_dataproc_v1beta2_JobMetadata_descriptor,
+            new java.lang.String[] {
+              "JobId", "Status", "OperationType", "StartTime",
+            });
+    internal_static_google_cloud_dataproc_v1beta2_SubmitJobRequest_descriptor =
+        getDescriptor().getMessageTypes().get(16);
     internal_static_google_cloud_dataproc_v1beta2_SubmitJobRequest_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_cloud_dataproc_v1beta2_SubmitJobRequest_descriptor,
@@ -680,7 +703,7 @@ public final class JobsProto {
               "ProjectId", "Region", "Job", "RequestId",
             });
     internal_static_google_cloud_dataproc_v1beta2_GetJobRequest_descriptor =
-        getDescriptor().getMessageTypes().get(16);
+        getDescriptor().getMessageTypes().get(17);
     internal_static_google_cloud_dataproc_v1beta2_GetJobRequest_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_cloud_dataproc_v1beta2_GetJobRequest_descriptor,
@@ -688,7 +711,7 @@ public final class JobsProto {
               "ProjectId", "Region", "JobId",
             });
     internal_static_google_cloud_dataproc_v1beta2_ListJobsRequest_descriptor =
-        getDescriptor().getMessageTypes().get(17);
+        getDescriptor().getMessageTypes().get(18);
     internal_static_google_cloud_dataproc_v1beta2_ListJobsRequest_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_cloud_dataproc_v1beta2_ListJobsRequest_descriptor,
@@ -702,7 +725,7 @@ public final class JobsProto {
               "Filter",
             });
     internal_static_google_cloud_dataproc_v1beta2_UpdateJobRequest_descriptor =
-        getDescriptor().getMessageTypes().get(18);
+        getDescriptor().getMessageTypes().get(19);
     internal_static_google_cloud_dataproc_v1beta2_UpdateJobRequest_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_cloud_dataproc_v1beta2_UpdateJobRequest_descriptor,
@@ -710,7 +733,7 @@ public final class JobsProto {
               "ProjectId", "Region", "JobId", "Job", "UpdateMask",
             });
     internal_static_google_cloud_dataproc_v1beta2_ListJobsResponse_descriptor =
-        getDescriptor().getMessageTypes().get(19);
+        getDescriptor().getMessageTypes().get(20);
     internal_static_google_cloud_dataproc_v1beta2_ListJobsResponse_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_cloud_dataproc_v1beta2_ListJobsResponse_descriptor,
@@ -718,7 +741,7 @@ public final class JobsProto {
               "Jobs", "NextPageToken",
             });
     internal_static_google_cloud_dataproc_v1beta2_CancelJobRequest_descriptor =
-        getDescriptor().getMessageTypes().get(20);
+        getDescriptor().getMessageTypes().get(21);
     internal_static_google_cloud_dataproc_v1beta2_CancelJobRequest_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_cloud_dataproc_v1beta2_CancelJobRequest_descriptor,
@@ -726,7 +749,7 @@ public final class JobsProto {
               "ProjectId", "Region", "JobId",
             });
     internal_static_google_cloud_dataproc_v1beta2_DeleteJobRequest_descriptor =
-        getDescriptor().getMessageTypes().get(21);
+        getDescriptor().getMessageTypes().get(22);
     internal_static_google_cloud_dataproc_v1beta2_DeleteJobRequest_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_cloud_dataproc_v1beta2_DeleteJobRequest_descriptor,
@@ -740,6 +763,7 @@ public final class JobsProto {
     registry.add(com.google.api.AnnotationsProto.http);
     registry.add(com.google.api.ClientProto.methodSignature);
     registry.add(com.google.api.ClientProto.oauthScopes);
+    registry.add(com.google.longrunning.OperationsProto.operationInfo);
     com.google.protobuf.Descriptors.FileDescriptor.internalUpdateFileDescriptor(
         descriptor, registry);
     com.google.api.AnnotationsProto.getDescriptor();

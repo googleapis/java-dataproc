@@ -1,11 +1,11 @@
 {
-  "updateTime": "2020-04-08T23:39:41.067423Z",
+  "updateTime": "2020-04-08T23:43:44.331357Z",
   "sources": [
     {
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-dataproc.git",
-        "sha": "71128e499281568247037d6375bbfc32e9012bfa"
+        "sha": "799beb5e127ecf54b93e77bd92c99642a0d450db"
       }
     },
     {

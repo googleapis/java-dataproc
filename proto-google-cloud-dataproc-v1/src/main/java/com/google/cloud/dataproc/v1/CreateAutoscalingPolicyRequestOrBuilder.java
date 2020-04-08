@@ -70,7 +70,7 @@ public interface CreateAutoscalingPolicyRequestOrBuilder
    *
    *
    * <pre>
-   * The autoscaling policy to create.
+   * Required. The autoscaling policy to create.
    * </pre>
    *
    * <code>
@@ -84,7 +84,7 @@ public interface CreateAutoscalingPolicyRequestOrBuilder
    *
    *
    * <pre>
-   * The autoscaling policy to create.
+   * Required. The autoscaling policy to create.
    * </pre>
    *
    * <code>
@@ -98,7 +98,7 @@ public interface CreateAutoscalingPolicyRequestOrBuilder
    *
    *
    * <pre>
-   * The autoscaling policy to create.
+   * Required. The autoscaling policy to create.
    * </pre>
    *
    * <code>

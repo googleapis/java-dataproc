@@ -366,7 +366,7 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
    * * `n1-standard-2`
    * **Auto Zone Exception**: If you are using the Dataproc
    * [Auto Zone
-   * Placement](/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement)
+   * Placement](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement)
    * feature, you must use the short name of the machine type
    * resource, for example, `n1-standard-2`.
    * </pre>
@@ -397,7 +397,7 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
    * * `n1-standard-2`
    * **Auto Zone Exception**: If you are using the Dataproc
    * [Auto Zone
-   * Placement](/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement)
+   * Placement](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement)
    * feature, you must use the short name of the machine type
    * resource, for example, `n1-standard-2`.
    * </pre>
@@ -631,8 +631,8 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
    *
    * <pre>
    * Optional. Specifies the minimum cpu platform for the Instance Group.
-   * See [Dataproc&amp;rarr;Minimum CPU Platform]
-   * (/dataproc/docs/concepts/compute/dataproc-min-cpu).
+   * See [Dataproc -&gt; Minimum CPU
+   * Platform](https://cloud.google.com/dataproc/docs/concepts/compute/dataproc-min-cpu).
    * </pre>
    *
    * <code>string min_cpu_platform = 9 [(.google.api.field_behavior) = OPTIONAL];</code>
@@ -655,8 +655,8 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
    *
    * <pre>
    * Optional. Specifies the minimum cpu platform for the Instance Group.
-   * See [Dataproc&amp;rarr;Minimum CPU Platform]
-   * (/dataproc/docs/concepts/compute/dataproc-min-cpu).
+   * See [Dataproc -&gt; Minimum CPU
+   * Platform](https://cloud.google.com/dataproc/docs/concepts/compute/dataproc-min-cpu).
    * </pre>
    *
    * <code>string min_cpu_platform = 9 [(.google.api.field_behavior) = OPTIONAL];</code>
@@ -1606,7 +1606,7 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      * * `n1-standard-2`
      * **Auto Zone Exception**: If you are using the Dataproc
      * [Auto Zone
-     * Placement](/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement)
+     * Placement](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement)
      * feature, you must use the short name of the machine type
      * resource, for example, `n1-standard-2`.
      * </pre>
@@ -1637,7 +1637,7 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      * * `n1-standard-2`
      * **Auto Zone Exception**: If you are using the Dataproc
      * [Auto Zone
-     * Placement](/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement)
+     * Placement](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement)
      * feature, you must use the short name of the machine type
      * resource, for example, `n1-standard-2`.
      * </pre>
@@ -1668,7 +1668,7 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      * * `n1-standard-2`
      * **Auto Zone Exception**: If you are using the Dataproc
      * [Auto Zone
-     * Placement](/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement)
+     * Placement](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement)
      * feature, you must use the short name of the machine type
      * resource, for example, `n1-standard-2`.
      * </pre>
@@ -1698,7 +1698,7 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      * * `n1-standard-2`
      * **Auto Zone Exception**: If you are using the Dataproc
      * [Auto Zone
-     * Placement](/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement)
+     * Placement](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement)
      * feature, you must use the short name of the machine type
      * resource, for example, `n1-standard-2`.
      * </pre>
@@ -1724,7 +1724,7 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      * * `n1-standard-2`
      * **Auto Zone Exception**: If you are using the Dataproc
      * [Auto Zone
-     * Placement](/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement)
+     * Placement](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement)
      * feature, you must use the short name of the machine type
      * resource, for example, `n1-standard-2`.
      * </pre>
@@ -2641,8 +2641,8 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      *
      * <pre>
      * Optional. Specifies the minimum cpu platform for the Instance Group.
-     * See [Dataproc&amp;rarr;Minimum CPU Platform]
-     * (/dataproc/docs/concepts/compute/dataproc-min-cpu).
+     * See [Dataproc -&gt; Minimum CPU
+     * Platform](https://cloud.google.com/dataproc/docs/concepts/compute/dataproc-min-cpu).
      * </pre>
      *
      * <code>string min_cpu_platform = 9 [(.google.api.field_behavior) = OPTIONAL];</code>
@@ -2665,8 +2665,8 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      *
      * <pre>
      * Optional. Specifies the minimum cpu platform for the Instance Group.
-     * See [Dataproc&amp;rarr;Minimum CPU Platform]
-     * (/dataproc/docs/concepts/compute/dataproc-min-cpu).
+     * See [Dataproc -&gt; Minimum CPU
+     * Platform](https://cloud.google.com/dataproc/docs/concepts/compute/dataproc-min-cpu).
      * </pre>
      *
      * <code>string min_cpu_platform = 9 [(.google.api.field_behavior) = OPTIONAL];</code>
@@ -2689,8 +2689,8 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      *
      * <pre>
      * Optional. Specifies the minimum cpu platform for the Instance Group.
-     * See [Dataproc&amp;rarr;Minimum CPU Platform]
-     * (/dataproc/docs/concepts/compute/dataproc-min-cpu).
+     * See [Dataproc -&gt; Minimum CPU
+     * Platform](https://cloud.google.com/dataproc/docs/concepts/compute/dataproc-min-cpu).
      * </pre>
      *
      * <code>string min_cpu_platform = 9 [(.google.api.field_behavior) = OPTIONAL];</code>
@@ -2712,8 +2712,8 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      *
      * <pre>
      * Optional. Specifies the minimum cpu platform for the Instance Group.
-     * See [Dataproc&amp;rarr;Minimum CPU Platform]
-     * (/dataproc/docs/concepts/compute/dataproc-min-cpu).
+     * See [Dataproc -&gt; Minimum CPU
+     * Platform](https://cloud.google.com/dataproc/docs/concepts/compute/dataproc-min-cpu).
      * </pre>
      *
      * <code>string min_cpu_platform = 9 [(.google.api.field_behavior) = OPTIONAL];</code>
@@ -2731,8 +2731,8 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      *
      * <pre>
      * Optional. Specifies the minimum cpu platform for the Instance Group.
-     * See [Dataproc&amp;rarr;Minimum CPU Platform]
-     * (/dataproc/docs/concepts/compute/dataproc-min-cpu).
+     * See [Dataproc -&gt; Minimum CPU
+     * Platform](https://cloud.google.com/dataproc/docs/concepts/compute/dataproc-min-cpu).
      * </pre>
      *
      * <code>string min_cpu_platform = 9 [(.google.api.field_behavior) = OPTIONAL];</code>

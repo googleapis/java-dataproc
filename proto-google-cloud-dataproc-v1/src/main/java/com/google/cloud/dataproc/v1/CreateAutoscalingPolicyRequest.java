@@ -199,7 +199,7 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
    *
    *
    * <pre>
-   * The autoscaling policy to create.
+   * Required. The autoscaling policy to create.
    * </pre>
    *
    * <code>
@@ -215,7 +215,7 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
    *
    *
    * <pre>
-   * The autoscaling policy to create.
+   * Required. The autoscaling policy to create.
    * </pre>
    *
    * <code>
@@ -233,7 +233,7 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
    *
    *
    * <pre>
-   * The autoscaling policy to create.
+   * Required. The autoscaling policy to create.
    * </pre>
    *
    * <code>
@@ -752,7 +752,7 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      *
      *
      * <pre>
-     * The autoscaling policy to create.
+     * Required. The autoscaling policy to create.
      * </pre>
      *
      * <code>
@@ -768,7 +768,7 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      *
      *
      * <pre>
-     * The autoscaling policy to create.
+     * Required. The autoscaling policy to create.
      * </pre>
      *
      * <code>
@@ -790,7 +790,7 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      *
      *
      * <pre>
-     * The autoscaling policy to create.
+     * Required. The autoscaling policy to create.
      * </pre>
      *
      * <code>
@@ -814,7 +814,7 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      *
      *
      * <pre>
-     * The autoscaling policy to create.
+     * Required. The autoscaling policy to create.
      * </pre>
      *
      * <code>
@@ -836,7 +836,7 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      *
      *
      * <pre>
-     * The autoscaling policy to create.
+     * Required. The autoscaling policy to create.
      * </pre>
      *
      * <code>
@@ -864,7 +864,7 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      *
      *
      * <pre>
-     * The autoscaling policy to create.
+     * Required. The autoscaling policy to create.
      * </pre>
      *
      * <code>
@@ -886,7 +886,7 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      *
      *
      * <pre>
-     * The autoscaling policy to create.
+     * Required. The autoscaling policy to create.
      * </pre>
      *
      * <code>
@@ -902,7 +902,7 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      *
      *
      * <pre>
-     * The autoscaling policy to create.
+     * Required. The autoscaling policy to create.
      * </pre>
      *
      * <code>
@@ -922,7 +922,7 @@ public final class CreateAutoscalingPolicyRequest extends com.google.protobuf.Ge
      *
      *
      * <pre>
-     * The autoscaling policy to create.
+     * Required. The autoscaling policy to create.
      * </pre>
      *
      * <code>

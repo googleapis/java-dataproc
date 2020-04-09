@@ -290,9 +290,18 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * Optional. The Compute Engine image resource used for cluster
-   * instances. It can be specified or may be inferred from
-   * `SoftwareConfig.image_version`.
+   * Optional. The Compute Engine image resource used for cluster instances.
+   * The URI can represent an image or image family.
+   * Image examples:
+   * * `https://www.googleapis.com/compute/beta/projects/[project_id]/global/images/[image-id]`
+   * * `projects/[project_id]/global/images/[image-id]`
+   * * `image-id`
+   * Image family examples. Dataproc will use the most recent
+   * image from the family:
+   * * `https://www.googleapis.com/compute/beta/projects/[project_id]/global/images/family/[custom-image-family-name]`
+   * * `projects/[project_id]/global/images/family/[custom-image-family-name]`
+   * If the URI is unspecified, it will be inferred from
+   * `SoftwareConfig.image_version` or the system default.
    * </pre>
    *
    * <code>string image_uri = 3 [(.google.api.field_behavior) = OPTIONAL];</code>
@@ -314,9 +323,18 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * Optional. The Compute Engine image resource used for cluster
-   * instances. It can be specified or may be inferred from
-   * `SoftwareConfig.image_version`.
+   * Optional. The Compute Engine image resource used for cluster instances.
+   * The URI can represent an image or image family.
+   * Image examples:
+   * * `https://www.googleapis.com/compute/beta/projects/[project_id]/global/images/[image-id]`
+   * * `projects/[project_id]/global/images/[image-id]`
+   * * `image-id`
+   * Image family examples. Dataproc will use the most recent
+   * image from the family:
+   * * `https://www.googleapis.com/compute/beta/projects/[project_id]/global/images/family/[custom-image-family-name]`
+   * * `projects/[project_id]/global/images/family/[custom-image-family-name]`
+   * If the URI is unspecified, it will be inferred from
+   * `SoftwareConfig.image_version` or the system default.
    * </pre>
    *
    * <code>string image_uri = 3 [(.google.api.field_behavior) = OPTIONAL];</code>
@@ -457,11 +475,11 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * Optional. Specifies that this instance group contains preemptible
+   * Output only. Specifies that this instance group contains preemptible
    * instances.
    * </pre>
    *
-   * <code>bool is_preemptible = 6 [(.google.api.field_behavior) = OPTIONAL];</code>
+   * <code>bool is_preemptible = 6 [(.google.api.field_behavior) = OUTPUT_ONLY];</code>
    *
    * @return The isPreemptible.
    */
@@ -1420,9 +1438,18 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Optional. The Compute Engine image resource used for cluster
-     * instances. It can be specified or may be inferred from
-     * `SoftwareConfig.image_version`.
+     * Optional. The Compute Engine image resource used for cluster instances.
+     * The URI can represent an image or image family.
+     * Image examples:
+     * * `https://www.googleapis.com/compute/beta/projects/[project_id]/global/images/[image-id]`
+     * * `projects/[project_id]/global/images/[image-id]`
+     * * `image-id`
+     * Image family examples. Dataproc will use the most recent
+     * image from the family:
+     * * `https://www.googleapis.com/compute/beta/projects/[project_id]/global/images/family/[custom-image-family-name]`
+     * * `projects/[project_id]/global/images/family/[custom-image-family-name]`
+     * If the URI is unspecified, it will be inferred from
+     * `SoftwareConfig.image_version` or the system default.
      * </pre>
      *
      * <code>string image_uri = 3 [(.google.api.field_behavior) = OPTIONAL];</code>
@@ -1444,9 +1471,18 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Optional. The Compute Engine image resource used for cluster
-     * instances. It can be specified or may be inferred from
-     * `SoftwareConfig.image_version`.
+     * Optional. The Compute Engine image resource used for cluster instances.
+     * The URI can represent an image or image family.
+     * Image examples:
+     * * `https://www.googleapis.com/compute/beta/projects/[project_id]/global/images/[image-id]`
+     * * `projects/[project_id]/global/images/[image-id]`
+     * * `image-id`
+     * Image family examples. Dataproc will use the most recent
+     * image from the family:
+     * * `https://www.googleapis.com/compute/beta/projects/[project_id]/global/images/family/[custom-image-family-name]`
+     * * `projects/[project_id]/global/images/family/[custom-image-family-name]`
+     * If the URI is unspecified, it will be inferred from
+     * `SoftwareConfig.image_version` or the system default.
      * </pre>
      *
      * <code>string image_uri = 3 [(.google.api.field_behavior) = OPTIONAL];</code>
@@ -1468,9 +1504,18 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Optional. The Compute Engine image resource used for cluster
-     * instances. It can be specified or may be inferred from
-     * `SoftwareConfig.image_version`.
+     * Optional. The Compute Engine image resource used for cluster instances.
+     * The URI can represent an image or image family.
+     * Image examples:
+     * * `https://www.googleapis.com/compute/beta/projects/[project_id]/global/images/[image-id]`
+     * * `projects/[project_id]/global/images/[image-id]`
+     * * `image-id`
+     * Image family examples. Dataproc will use the most recent
+     * image from the family:
+     * * `https://www.googleapis.com/compute/beta/projects/[project_id]/global/images/family/[custom-image-family-name]`
+     * * `projects/[project_id]/global/images/family/[custom-image-family-name]`
+     * If the URI is unspecified, it will be inferred from
+     * `SoftwareConfig.image_version` or the system default.
      * </pre>
      *
      * <code>string image_uri = 3 [(.google.api.field_behavior) = OPTIONAL];</code>
@@ -1491,9 +1536,18 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Optional. The Compute Engine image resource used for cluster
-     * instances. It can be specified or may be inferred from
-     * `SoftwareConfig.image_version`.
+     * Optional. The Compute Engine image resource used for cluster instances.
+     * The URI can represent an image or image family.
+     * Image examples:
+     * * `https://www.googleapis.com/compute/beta/projects/[project_id]/global/images/[image-id]`
+     * * `projects/[project_id]/global/images/[image-id]`
+     * * `image-id`
+     * Image family examples. Dataproc will use the most recent
+     * image from the family:
+     * * `https://www.googleapis.com/compute/beta/projects/[project_id]/global/images/family/[custom-image-family-name]`
+     * * `projects/[project_id]/global/images/family/[custom-image-family-name]`
+     * If the URI is unspecified, it will be inferred from
+     * `SoftwareConfig.image_version` or the system default.
      * </pre>
      *
      * <code>string image_uri = 3 [(.google.api.field_behavior) = OPTIONAL];</code>
@@ -1510,9 +1564,18 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Optional. The Compute Engine image resource used for cluster
-     * instances. It can be specified or may be inferred from
-     * `SoftwareConfig.image_version`.
+     * Optional. The Compute Engine image resource used for cluster instances.
+     * The URI can represent an image or image family.
+     * Image examples:
+     * * `https://www.googleapis.com/compute/beta/projects/[project_id]/global/images/[image-id]`
+     * * `projects/[project_id]/global/images/[image-id]`
+     * * `image-id`
+     * Image family examples. Dataproc will use the most recent
+     * image from the family:
+     * * `https://www.googleapis.com/compute/beta/projects/[project_id]/global/images/family/[custom-image-family-name]`
+     * * `projects/[project_id]/global/images/family/[custom-image-family-name]`
+     * If the URI is unspecified, it will be inferred from
+     * `SoftwareConfig.image_version` or the system default.
      * </pre>
      *
      * <code>string image_uri = 3 [(.google.api.field_behavior) = OPTIONAL];</code>
@@ -1890,11 +1953,11 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Optional. Specifies that this instance group contains preemptible
+     * Output only. Specifies that this instance group contains preemptible
      * instances.
      * </pre>
      *
-     * <code>bool is_preemptible = 6 [(.google.api.field_behavior) = OPTIONAL];</code>
+     * <code>bool is_preemptible = 6 [(.google.api.field_behavior) = OUTPUT_ONLY];</code>
      *
      * @return The isPreemptible.
      */
@@ -1905,11 +1968,11 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Optional. Specifies that this instance group contains preemptible
+     * Output only. Specifies that this instance group contains preemptible
      * instances.
      * </pre>
      *
-     * <code>bool is_preemptible = 6 [(.google.api.field_behavior) = OPTIONAL];</code>
+     * <code>bool is_preemptible = 6 [(.google.api.field_behavior) = OUTPUT_ONLY];</code>
      *
      * @param value The isPreemptible to set.
      * @return This builder for chaining.
@@ -1924,11 +1987,11 @@ public final class InstanceGroupConfig extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Optional. Specifies that this instance group contains preemptible
+     * Output only. Specifies that this instance group contains preemptible
      * instances.
      * </pre>
      *
-     * <code>bool is_preemptible = 6 [(.google.api.field_behavior) = OPTIONAL];</code>
+     * <code>bool is_preemptible = 6 [(.google.api.field_behavior) = OUTPUT_ONLY];</code>
      *
      * @return This builder for chaining.
      */

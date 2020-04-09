@@ -1,5 +1,14 @@
 # Changelog
 
+### [0.121.1](https://www.github.com/googleapis/java-dataproc/compare/v0.121.0...v0.121.1) (2020-04-09)
+
+
+### Dependencies
+
+* update core dependencies ([#91](https://www.github.com/googleapis/java-dataproc/issues/91)) ([2e8fce0](https://www.github.com/googleapis/java-dataproc/commit/2e8fce05b413f52efa7dc9b0c3d40e19d0d687ab))
+* update dependency com.google.cloud:google-cloud-core to v1.93.4 ([#127](https://www.github.com/googleapis/java-dataproc/issues/127)) ([9dd5f1a](https://www.github.com/googleapis/java-dataproc/commit/9dd5f1a28cf735a611a570026e4762137ac4b9e0))
+* update dependency org.threeten:threetenbp to v1.4.3 ([#111](https://www.github.com/googleapis/java-dataproc/issues/111)) ([3d7178b](https://www.github.com/googleapis/java-dataproc/commit/3d7178b323615d8ddde92b03349da2ec81aee809))
+
 ## [0.121.0](https://www.github.com/googleapis/java-dataproc/compare/v0.120.0...v0.121.0) (2020-04-01)
 
 

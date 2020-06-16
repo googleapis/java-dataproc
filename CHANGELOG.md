@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.122.4](https://www.github.com/googleapis/java-dataproc/compare/v0.122.3...v0.122.4) (2020-06-16)
+
+
+### Dependencies
+
+* update dependency com.google.protobuf:protobuf-java to v3.12.2 ([#192](https://www.github.com/googleapis/java-dataproc/issues/192)) ([7762282](https://www.github.com/googleapis/java-dataproc/commit/7762282f57212548d6091b34e8e1ce5bc90c711e))
+* update dependency io.grpc:grpc-bom to v1.30.0 ([#209](https://www.github.com/googleapis/java-dataproc/issues/209)) ([141db4b](https://www.github.com/googleapis/java-dataproc/commit/141db4b85428264b35dfa8a7501e90c09e06b2e4))
+
 ### [0.122.3](https://www.github.com/googleapis/java-dataproc/compare/v0.122.2...v0.122.3) (2020-06-09)
 
 

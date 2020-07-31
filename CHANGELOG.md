@@ -1,5 +1,19 @@
 # Changelog
 
+### [1.0.1](https://www.github.com/googleapis/java-dataproc/compare/v1.0.0...v1.0.1) (2020-07-31)
+
+
+### Bug Fixes
+
+* fix LRO annotations for method `DiagnoseCluster`. ([#250](https://www.github.com/googleapis/java-dataproc/issues/250)) ([50f0ad0](https://www.github.com/googleapis/java-dataproc/commit/50f0ad0e3f3184d227927c172a1055bbaa8bdcb0))
+* migrate to grpc_service_config ([#248](https://www.github.com/googleapis/java-dataproc/issues/248)) ([bef1b0d](https://www.github.com/googleapis/java-dataproc/commit/bef1b0d43ffa90cf27303a87ce8e020083512841))
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v0.8.2 ([#244](https://www.github.com/googleapis/java-dataproc/issues/244)) ([f5d3415](https://www.github.com/googleapis/java-dataproc/commit/f5d341507d78c4d9268dc1932808dfc53d4857c3))
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v0.8.3 ([#247](https://www.github.com/googleapis/java-dataproc/issues/247)) ([b2cb7c6](https://www.github.com/googleapis/java-dataproc/commit/b2cb7c689e440481a539fba9ac005959b4ca6ba7))
+
 ## [1.0.0](https://www.github.com/googleapis/java-dataproc/compare/v0.122.3...v1.0.0) (2020-06-17)
 
 

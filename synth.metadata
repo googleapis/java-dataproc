@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-dataproc.git",
-        "sha": "46f5d545a84aaaf22934fc2226bc6771d6c8c583"
+        "sha": "eca9e3db35bdbfb8877d7685c268f03ffe483a42"
       }
     },
     {
@@ -27,7 +27,7 @@
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "80003a3de2d8a75f5b47cb2e77e018f7f0f776cc"
+        "sha": "916c10e8581804df2b48a0f0457d848f3faa582e"
       }
     }
   ],
@@ -109,7 +109,6 @@
     "CODE_OF_CONDUCT.md",
     "CONTRIBUTING.md",
     "LICENSE",
-    "README.md",
     "codecov.yaml",
     "google-cloud-dataproc/src/main/java/com/google/cloud/dataproc/v1/AutoscalingPolicyServiceClient.java",
     "google-cloud-dataproc/src/main/java/com/google/cloud/dataproc/v1/AutoscalingPolicyServiceSettings.java",

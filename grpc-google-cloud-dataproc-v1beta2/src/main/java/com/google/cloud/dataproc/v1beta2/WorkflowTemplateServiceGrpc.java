@@ -22,7 +22,14 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/** */
+/**
+ *
+ *
+ * <pre>
+ * The API interface for managing Workflow Templates in the
+ * Dataproc API.
+ * </pre>
+ */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/dataproc/v1beta2/workflow_templates.proto")
@@ -442,10 +449,23 @@ public final class WorkflowTemplateServiceGrpc {
     return WorkflowTemplateServiceFutureStub.newStub(factory, channel);
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * The API interface for managing Workflow Templates in the
+   * Dataproc API.
+   * </pre>
+   */
   public abstract static class WorkflowTemplateServiceImplBase implements io.grpc.BindableService {
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates new workflow template.
+     * </pre>
+     */
     public void createWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.CreateWorkflowTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.WorkflowTemplate>
@@ -453,7 +473,15 @@ public final class WorkflowTemplateServiceGrpc {
       asyncUnimplementedUnaryCall(getCreateWorkflowTemplateMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Retrieves the latest workflow template.
+     * Can retrieve previously instantiated template by specifying optional
+     * version parameter.
+     * </pre>
+     */
     public void getWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.GetWorkflowTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.WorkflowTemplate>
@@ -461,21 +489,73 @@ public final class WorkflowTemplateServiceGrpc {
       asyncUnimplementedUnaryCall(getGetWorkflowTemplateMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Instantiates a template and begins execution.
+     * The returned Operation can be used to track execution of
+     * workflow by polling
+     * [operations.get][google.longrunning.Operations.GetOperation].
+     * The Operation will complete when entire workflow is finished.
+     * The running workflow can be aborted via
+     * [operations.cancel][google.longrunning.Operations.CancelOperation].
+     * This will cause any inflight jobs to be cancelled and workflow-owned
+     * clusters to be deleted.
+     * The [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [WorkflowMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#workflowmetadata).
+     * Also see [Using
+     * WorkflowMetadata](https://cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_workflowmetadata).
+     * On successful completion,
+     * [Operation.response][google.longrunning.Operation.response] will be
+     * [Empty][google.protobuf.Empty].
+     * </pre>
+     */
     public void instantiateWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.InstantiateWorkflowTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getInstantiateWorkflowTemplateMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Instantiates a template and begins execution.
+     * This method is equivalent to executing the sequence
+     * [CreateWorkflowTemplate][google.cloud.dataproc.v1beta2.WorkflowTemplateService.CreateWorkflowTemplate], [InstantiateWorkflowTemplate][google.cloud.dataproc.v1beta2.WorkflowTemplateService.InstantiateWorkflowTemplate],
+     * [DeleteWorkflowTemplate][google.cloud.dataproc.v1beta2.WorkflowTemplateService.DeleteWorkflowTemplate].
+     * The returned Operation can be used to track execution of
+     * workflow by polling
+     * [operations.get][google.longrunning.Operations.GetOperation].
+     * The Operation will complete when entire workflow is finished.
+     * The running workflow can be aborted via
+     * [operations.cancel][google.longrunning.Operations.CancelOperation].
+     * This will cause any inflight jobs to be cancelled and workflow-owned
+     * clusters to be deleted.
+     * The [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [WorkflowMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1#workflowmetadata).
+     * Also see [Using
+     * WorkflowMetadata](https://cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_workflowmetadata).
+     * On successful completion,
+     * [Operation.response][google.longrunning.Operation.response] will be
+     * [Empty][google.protobuf.Empty].
+     * </pre>
+     */
     public void instantiateInlineWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.InstantiateInlineWorkflowTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getInstantiateInlineWorkflowTemplateMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates (replaces) workflow template. The updated template
+     * must contain version that matches the current server version.
+     * </pre>
+     */
     public void updateWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.UpdateWorkflowTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.WorkflowTemplate>
@@ -483,7 +563,13 @@ public final class WorkflowTemplateServiceGrpc {
       asyncUnimplementedUnaryCall(getUpdateWorkflowTemplateMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists workflows that match the specified filter in the request.
+     * </pre>
+     */
     public void listWorkflowTemplates(
         com.google.cloud.dataproc.v1beta2.ListWorkflowTemplatesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.ListWorkflowTemplatesResponse>
@@ -491,7 +577,13 @@ public final class WorkflowTemplateServiceGrpc {
       asyncUnimplementedUnaryCall(getListWorkflowTemplatesMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes a workflow template. It does not cancel in-progress workflows.
+     * </pre>
+     */
     public void deleteWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.DeleteWorkflowTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -553,7 +645,14 @@ public final class WorkflowTemplateServiceGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * The API interface for managing Workflow Templates in the
+   * Dataproc API.
+   * </pre>
+   */
   public static final class WorkflowTemplateServiceStub
       extends io.grpc.stub.AbstractAsyncStub<WorkflowTemplateServiceStub> {
     private WorkflowTemplateServiceStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -566,7 +665,13 @@ public final class WorkflowTemplateServiceGrpc {
       return new WorkflowTemplateServiceStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates new workflow template.
+     * </pre>
+     */
     public void createWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.CreateWorkflowTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.WorkflowTemplate>
@@ -577,7 +682,15 @@ public final class WorkflowTemplateServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Retrieves the latest workflow template.
+     * Can retrieve previously instantiated template by specifying optional
+     * version parameter.
+     * </pre>
+     */
     public void getWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.GetWorkflowTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.WorkflowTemplate>
@@ -588,7 +701,28 @@ public final class WorkflowTemplateServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Instantiates a template and begins execution.
+     * The returned Operation can be used to track execution of
+     * workflow by polling
+     * [operations.get][google.longrunning.Operations.GetOperation].
+     * The Operation will complete when entire workflow is finished.
+     * The running workflow can be aborted via
+     * [operations.cancel][google.longrunning.Operations.CancelOperation].
+     * This will cause any inflight jobs to be cancelled and workflow-owned
+     * clusters to be deleted.
+     * The [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [WorkflowMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#workflowmetadata).
+     * Also see [Using
+     * WorkflowMetadata](https://cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_workflowmetadata).
+     * On successful completion,
+     * [Operation.response][google.longrunning.Operation.response] will be
+     * [Empty][google.protobuf.Empty].
+     * </pre>
+     */
     public void instantiateWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.InstantiateWorkflowTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -598,7 +732,31 @@ public final class WorkflowTemplateServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Instantiates a template and begins execution.
+     * This method is equivalent to executing the sequence
+     * [CreateWorkflowTemplate][google.cloud.dataproc.v1beta2.WorkflowTemplateService.CreateWorkflowTemplate], [InstantiateWorkflowTemplate][google.cloud.dataproc.v1beta2.WorkflowTemplateService.InstantiateWorkflowTemplate],
+     * [DeleteWorkflowTemplate][google.cloud.dataproc.v1beta2.WorkflowTemplateService.DeleteWorkflowTemplate].
+     * The returned Operation can be used to track execution of
+     * workflow by polling
+     * [operations.get][google.longrunning.Operations.GetOperation].
+     * The Operation will complete when entire workflow is finished.
+     * The running workflow can be aborted via
+     * [operations.cancel][google.longrunning.Operations.CancelOperation].
+     * This will cause any inflight jobs to be cancelled and workflow-owned
+     * clusters to be deleted.
+     * The [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [WorkflowMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1#workflowmetadata).
+     * Also see [Using
+     * WorkflowMetadata](https://cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_workflowmetadata).
+     * On successful completion,
+     * [Operation.response][google.longrunning.Operation.response] will be
+     * [Empty][google.protobuf.Empty].
+     * </pre>
+     */
     public void instantiateInlineWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.InstantiateInlineWorkflowTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -608,7 +766,14 @@ public final class WorkflowTemplateServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates (replaces) workflow template. The updated template
+     * must contain version that matches the current server version.
+     * </pre>
+     */
     public void updateWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.UpdateWorkflowTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.WorkflowTemplate>
@@ -619,7 +784,13 @@ public final class WorkflowTemplateServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists workflows that match the specified filter in the request.
+     * </pre>
+     */
     public void listWorkflowTemplates(
         com.google.cloud.dataproc.v1beta2.ListWorkflowTemplatesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.ListWorkflowTemplatesResponse>
@@ -630,7 +801,13 @@ public final class WorkflowTemplateServiceGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes a workflow template. It does not cancel in-progress workflows.
+     * </pre>
+     */
     public void deleteWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.DeleteWorkflowTemplateRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -641,7 +818,14 @@ public final class WorkflowTemplateServiceGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * The API interface for managing Workflow Templates in the
+   * Dataproc API.
+   * </pre>
+   */
   public static final class WorkflowTemplateServiceBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<WorkflowTemplateServiceBlockingStub> {
     private WorkflowTemplateServiceBlockingStub(
@@ -655,49 +839,127 @@ public final class WorkflowTemplateServiceGrpc {
       return new WorkflowTemplateServiceBlockingStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates new workflow template.
+     * </pre>
+     */
     public com.google.cloud.dataproc.v1beta2.WorkflowTemplate createWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.CreateWorkflowTemplateRequest request) {
       return blockingUnaryCall(
           getChannel(), getCreateWorkflowTemplateMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Retrieves the latest workflow template.
+     * Can retrieve previously instantiated template by specifying optional
+     * version parameter.
+     * </pre>
+     */
     public com.google.cloud.dataproc.v1beta2.WorkflowTemplate getWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.GetWorkflowTemplateRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetWorkflowTemplateMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Instantiates a template and begins execution.
+     * The returned Operation can be used to track execution of
+     * workflow by polling
+     * [operations.get][google.longrunning.Operations.GetOperation].
+     * The Operation will complete when entire workflow is finished.
+     * The running workflow can be aborted via
+     * [operations.cancel][google.longrunning.Operations.CancelOperation].
+     * This will cause any inflight jobs to be cancelled and workflow-owned
+     * clusters to be deleted.
+     * The [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [WorkflowMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#workflowmetadata).
+     * Also see [Using
+     * WorkflowMetadata](https://cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_workflowmetadata).
+     * On successful completion,
+     * [Operation.response][google.longrunning.Operation.response] will be
+     * [Empty][google.protobuf.Empty].
+     * </pre>
+     */
     public com.google.longrunning.Operation instantiateWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.InstantiateWorkflowTemplateRequest request) {
       return blockingUnaryCall(
           getChannel(), getInstantiateWorkflowTemplateMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Instantiates a template and begins execution.
+     * This method is equivalent to executing the sequence
+     * [CreateWorkflowTemplate][google.cloud.dataproc.v1beta2.WorkflowTemplateService.CreateWorkflowTemplate], [InstantiateWorkflowTemplate][google.cloud.dataproc.v1beta2.WorkflowTemplateService.InstantiateWorkflowTemplate],
+     * [DeleteWorkflowTemplate][google.cloud.dataproc.v1beta2.WorkflowTemplateService.DeleteWorkflowTemplate].
+     * The returned Operation can be used to track execution of
+     * workflow by polling
+     * [operations.get][google.longrunning.Operations.GetOperation].
+     * The Operation will complete when entire workflow is finished.
+     * The running workflow can be aborted via
+     * [operations.cancel][google.longrunning.Operations.CancelOperation].
+     * This will cause any inflight jobs to be cancelled and workflow-owned
+     * clusters to be deleted.
+     * The [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [WorkflowMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1#workflowmetadata).
+     * Also see [Using
+     * WorkflowMetadata](https://cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_workflowmetadata).
+     * On successful completion,
+     * [Operation.response][google.longrunning.Operation.response] will be
+     * [Empty][google.protobuf.Empty].
+     * </pre>
+     */
     public com.google.longrunning.Operation instantiateInlineWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.InstantiateInlineWorkflowTemplateRequest request) {
       return blockingUnaryCall(
           getChannel(), getInstantiateInlineWorkflowTemplateMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates (replaces) workflow template. The updated template
+     * must contain version that matches the current server version.
+     * </pre>
+     */
     public com.google.cloud.dataproc.v1beta2.WorkflowTemplate updateWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.UpdateWorkflowTemplateRequest request) {
       return blockingUnaryCall(
           getChannel(), getUpdateWorkflowTemplateMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists workflows that match the specified filter in the request.
+     * </pre>
+     */
     public com.google.cloud.dataproc.v1beta2.ListWorkflowTemplatesResponse listWorkflowTemplates(
         com.google.cloud.dataproc.v1beta2.ListWorkflowTemplatesRequest request) {
       return blockingUnaryCall(
           getChannel(), getListWorkflowTemplatesMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes a workflow template. It does not cancel in-progress workflows.
+     * </pre>
+     */
     public com.google.protobuf.Empty deleteWorkflowTemplate(
         com.google.cloud.dataproc.v1beta2.DeleteWorkflowTemplateRequest request) {
       return blockingUnaryCall(
@@ -705,7 +967,14 @@ public final class WorkflowTemplateServiceGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * The API interface for managing Workflow Templates in the
+   * Dataproc API.
+   * </pre>
+   */
   public static final class WorkflowTemplateServiceFutureStub
       extends io.grpc.stub.AbstractFutureStub<WorkflowTemplateServiceFutureStub> {
     private WorkflowTemplateServiceFutureStub(
@@ -719,7 +988,13 @@ public final class WorkflowTemplateServiceGrpc {
       return new WorkflowTemplateServiceFutureStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates new workflow template.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.dataproc.v1beta2.WorkflowTemplate>
         createWorkflowTemplate(
@@ -728,7 +1003,15 @@ public final class WorkflowTemplateServiceGrpc {
           getChannel().newCall(getCreateWorkflowTemplateMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Retrieves the latest workflow template.
+     * Can retrieve previously instantiated template by specifying optional
+     * version parameter.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.dataproc.v1beta2.WorkflowTemplate>
         getWorkflowTemplate(com.google.cloud.dataproc.v1beta2.GetWorkflowTemplateRequest request) {
@@ -736,7 +1019,28 @@ public final class WorkflowTemplateServiceGrpc {
           getChannel().newCall(getGetWorkflowTemplateMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Instantiates a template and begins execution.
+     * The returned Operation can be used to track execution of
+     * workflow by polling
+     * [operations.get][google.longrunning.Operations.GetOperation].
+     * The Operation will complete when entire workflow is finished.
+     * The running workflow can be aborted via
+     * [operations.cancel][google.longrunning.Operations.CancelOperation].
+     * This will cause any inflight jobs to be cancelled and workflow-owned
+     * clusters to be deleted.
+     * The [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [WorkflowMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#workflowmetadata).
+     * Also see [Using
+     * WorkflowMetadata](https://cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_workflowmetadata).
+     * On successful completion,
+     * [Operation.response][google.longrunning.Operation.response] will be
+     * [Empty][google.protobuf.Empty].
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         instantiateWorkflowTemplate(
             com.google.cloud.dataproc.v1beta2.InstantiateWorkflowTemplateRequest request) {
@@ -744,7 +1048,31 @@ public final class WorkflowTemplateServiceGrpc {
           getChannel().newCall(getInstantiateWorkflowTemplateMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Instantiates a template and begins execution.
+     * This method is equivalent to executing the sequence
+     * [CreateWorkflowTemplate][google.cloud.dataproc.v1beta2.WorkflowTemplateService.CreateWorkflowTemplate], [InstantiateWorkflowTemplate][google.cloud.dataproc.v1beta2.WorkflowTemplateService.InstantiateWorkflowTemplate],
+     * [DeleteWorkflowTemplate][google.cloud.dataproc.v1beta2.WorkflowTemplateService.DeleteWorkflowTemplate].
+     * The returned Operation can be used to track execution of
+     * workflow by polling
+     * [operations.get][google.longrunning.Operations.GetOperation].
+     * The Operation will complete when entire workflow is finished.
+     * The running workflow can be aborted via
+     * [operations.cancel][google.longrunning.Operations.CancelOperation].
+     * This will cause any inflight jobs to be cancelled and workflow-owned
+     * clusters to be deleted.
+     * The [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [WorkflowMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1#workflowmetadata).
+     * Also see [Using
+     * WorkflowMetadata](https://cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_workflowmetadata).
+     * On successful completion,
+     * [Operation.response][google.longrunning.Operation.response] will be
+     * [Empty][google.protobuf.Empty].
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         instantiateInlineWorkflowTemplate(
             com.google.cloud.dataproc.v1beta2.InstantiateInlineWorkflowTemplateRequest request) {
@@ -753,7 +1081,14 @@ public final class WorkflowTemplateServiceGrpc {
           request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates (replaces) workflow template. The updated template
+     * must contain version that matches the current server version.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.dataproc.v1beta2.WorkflowTemplate>
         updateWorkflowTemplate(
@@ -762,7 +1097,13 @@ public final class WorkflowTemplateServiceGrpc {
           getChannel().newCall(getUpdateWorkflowTemplateMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists workflows that match the specified filter in the request.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.dataproc.v1beta2.ListWorkflowTemplatesResponse>
         listWorkflowTemplates(
@@ -771,7 +1112,13 @@ public final class WorkflowTemplateServiceGrpc {
           getChannel().newCall(getListWorkflowTemplatesMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes a workflow template. It does not cancel in-progress workflows.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deleteWorkflowTemplate(
             com.google.cloud.dataproc.v1beta2.DeleteWorkflowTemplateRequest request) {

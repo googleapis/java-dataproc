@@ -22,7 +22,14 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/** */
+/**
+ *
+ *
+ * <pre>
+ * The ClusterControllerService provides methods to manage clusters
+ * of Compute Engine instances.
+ * </pre>
+ */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/dataproc/v1beta2/clusters.proto")
@@ -345,38 +352,81 @@ public final class ClusterControllerGrpc {
     return ClusterControllerFutureStub.newStub(factory, channel);
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * The ClusterControllerService provides methods to manage clusters
+   * of Compute Engine instances.
+   * </pre>
+   */
   public abstract static class ClusterControllerImplBase implements io.grpc.BindableService {
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates a cluster in a project. The returned
+     * [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#clusteroperationmetadata).
+     * </pre>
+     */
     public void createCluster(
         com.google.cloud.dataproc.v1beta2.CreateClusterRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getCreateClusterMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates a cluster in a project. The returned
+     * [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#clusteroperationmetadata).
+     * </pre>
+     */
     public void updateCluster(
         com.google.cloud.dataproc.v1beta2.UpdateClusterRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getUpdateClusterMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes a cluster in a project. The returned
+     * [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#clusteroperationmetadata).
+     * </pre>
+     */
     public void deleteCluster(
         com.google.cloud.dataproc.v1beta2.DeleteClusterRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getDeleteClusterMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets the resource representation for a cluster in a project.
+     * </pre>
+     */
     public void getCluster(
         com.google.cloud.dataproc.v1beta2.GetClusterRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.Cluster> responseObserver) {
       asyncUnimplementedUnaryCall(getGetClusterMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists all regions/{region}/clusters in a project alphabetically.
+     * </pre>
+     */
     public void listClusters(
         com.google.cloud.dataproc.v1beta2.ListClustersRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.ListClustersResponse>
@@ -384,7 +434,19 @@ public final class ClusterControllerGrpc {
       asyncUnimplementedUnaryCall(getListClustersMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets cluster diagnostic information. The returned
+     * [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#clusteroperationmetadata).
+     * After the operation completes,
+     * [Operation.response][google.longrunning.Operation.response]
+     * contains
+     * [Empty][google.protobuf.Empty].
+     * </pre>
+     */
     public void diagnoseCluster(
         com.google.cloud.dataproc.v1beta2.DiagnoseClusterRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -435,7 +497,14 @@ public final class ClusterControllerGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * The ClusterControllerService provides methods to manage clusters
+   * of Compute Engine instances.
+   * </pre>
+   */
   public static final class ClusterControllerStub
       extends io.grpc.stub.AbstractAsyncStub<ClusterControllerStub> {
     private ClusterControllerStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -448,7 +517,15 @@ public final class ClusterControllerGrpc {
       return new ClusterControllerStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates a cluster in a project. The returned
+     * [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#clusteroperationmetadata).
+     * </pre>
+     */
     public void createCluster(
         com.google.cloud.dataproc.v1beta2.CreateClusterRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -458,7 +535,15 @@ public final class ClusterControllerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates a cluster in a project. The returned
+     * [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#clusteroperationmetadata).
+     * </pre>
+     */
     public void updateCluster(
         com.google.cloud.dataproc.v1beta2.UpdateClusterRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -468,7 +553,15 @@ public final class ClusterControllerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes a cluster in a project. The returned
+     * [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#clusteroperationmetadata).
+     * </pre>
+     */
     public void deleteCluster(
         com.google.cloud.dataproc.v1beta2.DeleteClusterRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -478,7 +571,13 @@ public final class ClusterControllerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets the resource representation for a cluster in a project.
+     * </pre>
+     */
     public void getCluster(
         com.google.cloud.dataproc.v1beta2.GetClusterRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.Cluster> responseObserver) {
@@ -486,7 +585,13 @@ public final class ClusterControllerGrpc {
           getChannel().newCall(getGetClusterMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists all regions/{region}/clusters in a project alphabetically.
+     * </pre>
+     */
     public void listClusters(
         com.google.cloud.dataproc.v1beta2.ListClustersRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.ListClustersResponse>
@@ -497,7 +602,19 @@ public final class ClusterControllerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets cluster diagnostic information. The returned
+     * [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#clusteroperationmetadata).
+     * After the operation completes,
+     * [Operation.response][google.longrunning.Operation.response]
+     * contains
+     * [Empty][google.protobuf.Empty].
+     * </pre>
+     */
     public void diagnoseCluster(
         com.google.cloud.dataproc.v1beta2.DiagnoseClusterRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -508,7 +625,14 @@ public final class ClusterControllerGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * The ClusterControllerService provides methods to manage clusters
+   * of Compute Engine instances.
+   * </pre>
+   */
   public static final class ClusterControllerBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<ClusterControllerBlockingStub> {
     private ClusterControllerBlockingStub(
@@ -522,44 +646,99 @@ public final class ClusterControllerGrpc {
       return new ClusterControllerBlockingStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates a cluster in a project. The returned
+     * [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#clusteroperationmetadata).
+     * </pre>
+     */
     public com.google.longrunning.Operation createCluster(
         com.google.cloud.dataproc.v1beta2.CreateClusterRequest request) {
       return blockingUnaryCall(getChannel(), getCreateClusterMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates a cluster in a project. The returned
+     * [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#clusteroperationmetadata).
+     * </pre>
+     */
     public com.google.longrunning.Operation updateCluster(
         com.google.cloud.dataproc.v1beta2.UpdateClusterRequest request) {
       return blockingUnaryCall(getChannel(), getUpdateClusterMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes a cluster in a project. The returned
+     * [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#clusteroperationmetadata).
+     * </pre>
+     */
     public com.google.longrunning.Operation deleteCluster(
         com.google.cloud.dataproc.v1beta2.DeleteClusterRequest request) {
       return blockingUnaryCall(getChannel(), getDeleteClusterMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets the resource representation for a cluster in a project.
+     * </pre>
+     */
     public com.google.cloud.dataproc.v1beta2.Cluster getCluster(
         com.google.cloud.dataproc.v1beta2.GetClusterRequest request) {
       return blockingUnaryCall(getChannel(), getGetClusterMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists all regions/{region}/clusters in a project alphabetically.
+     * </pre>
+     */
     public com.google.cloud.dataproc.v1beta2.ListClustersResponse listClusters(
         com.google.cloud.dataproc.v1beta2.ListClustersRequest request) {
       return blockingUnaryCall(getChannel(), getListClustersMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets cluster diagnostic information. The returned
+     * [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#clusteroperationmetadata).
+     * After the operation completes,
+     * [Operation.response][google.longrunning.Operation.response]
+     * contains
+     * [Empty][google.protobuf.Empty].
+     * </pre>
+     */
     public com.google.longrunning.Operation diagnoseCluster(
         com.google.cloud.dataproc.v1beta2.DiagnoseClusterRequest request) {
       return blockingUnaryCall(getChannel(), getDiagnoseClusterMethod(), getCallOptions(), request);
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * The ClusterControllerService provides methods to manage clusters
+   * of Compute Engine instances.
+   * </pre>
+   */
   public static final class ClusterControllerFutureStub
       extends io.grpc.stub.AbstractFutureStub<ClusterControllerFutureStub> {
     private ClusterControllerFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -572,28 +751,58 @@ public final class ClusterControllerGrpc {
       return new ClusterControllerFutureStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates a cluster in a project. The returned
+     * [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#clusteroperationmetadata).
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         createCluster(com.google.cloud.dataproc.v1beta2.CreateClusterRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getCreateClusterMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates a cluster in a project. The returned
+     * [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#clusteroperationmetadata).
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         updateCluster(com.google.cloud.dataproc.v1beta2.UpdateClusterRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getUpdateClusterMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes a cluster in a project. The returned
+     * [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#clusteroperationmetadata).
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         deleteCluster(com.google.cloud.dataproc.v1beta2.DeleteClusterRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getDeleteClusterMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets the resource representation for a cluster in a project.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.dataproc.v1beta2.Cluster>
         getCluster(com.google.cloud.dataproc.v1beta2.GetClusterRequest request) {
@@ -601,7 +810,13 @@ public final class ClusterControllerGrpc {
           getChannel().newCall(getGetClusterMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists all regions/{region}/clusters in a project alphabetically.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.dataproc.v1beta2.ListClustersResponse>
         listClusters(com.google.cloud.dataproc.v1beta2.ListClustersRequest request) {
@@ -609,7 +824,19 @@ public final class ClusterControllerGrpc {
           getChannel().newCall(getListClustersMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets cluster diagnostic information. The returned
+     * [Operation.metadata][google.longrunning.Operation.metadata] will be
+     * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1beta2#clusteroperationmetadata).
+     * After the operation completes,
+     * [Operation.response][google.longrunning.Operation.response]
+     * contains
+     * [Empty][google.protobuf.Empty].
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         diagnoseCluster(com.google.cloud.dataproc.v1beta2.DiagnoseClusterRequest request) {
       return futureUnaryCall(

@@ -22,7 +22,13 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/** */
+/**
+ *
+ *
+ * <pre>
+ * The JobController provides methods to manage jobs.
+ * </pre>
+ */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/dataproc/v1beta2/jobs.proto")
@@ -377,31 +383,61 @@ public final class JobControllerGrpc {
     return JobControllerFutureStub.newStub(factory, channel);
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * The JobController provides methods to manage jobs.
+   * </pre>
+   */
   public abstract static class JobControllerImplBase implements io.grpc.BindableService {
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Submits a job to a cluster.
+     * </pre>
+     */
     public void submitJob(
         com.google.cloud.dataproc.v1beta2.SubmitJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.Job> responseObserver) {
       asyncUnimplementedUnaryCall(getSubmitJobMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Submits job to a cluster.
+     * </pre>
+     */
     public void submitJobAsOperation(
         com.google.cloud.dataproc.v1beta2.SubmitJobRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getSubmitJobAsOperationMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets the resource representation for a job in a project.
+     * </pre>
+     */
     public void getJob(
         com.google.cloud.dataproc.v1beta2.GetJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.Job> responseObserver) {
       asyncUnimplementedUnaryCall(getGetJobMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists regions/{region}/jobs in a project.
+     * </pre>
+     */
     public void listJobs(
         com.google.cloud.dataproc.v1beta2.ListJobsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.ListJobsResponse>
@@ -409,21 +445,44 @@ public final class JobControllerGrpc {
       asyncUnimplementedUnaryCall(getListJobsMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates a job in a project.
+     * </pre>
+     */
     public void updateJob(
         com.google.cloud.dataproc.v1beta2.UpdateJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.Job> responseObserver) {
       asyncUnimplementedUnaryCall(getUpdateJobMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Starts a job cancellation request. To access the job resource
+     * after cancellation, call
+     * [regions/{region}/jobs.list](https://cloud.google.com/dataproc/docs/reference/rest/v1beta2/projects.regions.jobs/list)
+     * or
+     * [regions/{region}/jobs.get](https://cloud.google.com/dataproc/docs/reference/rest/v1beta2/projects.regions.jobs/get).
+     * </pre>
+     */
     public void cancelJob(
         com.google.cloud.dataproc.v1beta2.CancelJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.Job> responseObserver) {
       asyncUnimplementedUnaryCall(getCancelJobMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes the job from the project. If the job is active, the delete fails,
+     * and the response returns `FAILED_PRECONDITION`.
+     * </pre>
+     */
     public void deleteJob(
         com.google.cloud.dataproc.v1beta2.DeleteJobRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -480,7 +539,13 @@ public final class JobControllerGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * The JobController provides methods to manage jobs.
+   * </pre>
+   */
   public static final class JobControllerStub
       extends io.grpc.stub.AbstractAsyncStub<JobControllerStub> {
     private JobControllerStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -492,7 +557,13 @@ public final class JobControllerGrpc {
       return new JobControllerStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Submits a job to a cluster.
+     * </pre>
+     */
     public void submitJob(
         com.google.cloud.dataproc.v1beta2.SubmitJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.Job> responseObserver) {
@@ -500,7 +571,13 @@ public final class JobControllerGrpc {
           getChannel().newCall(getSubmitJobMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Submits job to a cluster.
+     * </pre>
+     */
     public void submitJobAsOperation(
         com.google.cloud.dataproc.v1beta2.SubmitJobRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -510,7 +587,13 @@ public final class JobControllerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets the resource representation for a job in a project.
+     * </pre>
+     */
     public void getJob(
         com.google.cloud.dataproc.v1beta2.GetJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.Job> responseObserver) {
@@ -518,7 +601,13 @@ public final class JobControllerGrpc {
           getChannel().newCall(getGetJobMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists regions/{region}/jobs in a project.
+     * </pre>
+     */
     public void listJobs(
         com.google.cloud.dataproc.v1beta2.ListJobsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.ListJobsResponse>
@@ -527,7 +616,13 @@ public final class JobControllerGrpc {
           getChannel().newCall(getListJobsMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates a job in a project.
+     * </pre>
+     */
     public void updateJob(
         com.google.cloud.dataproc.v1beta2.UpdateJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.Job> responseObserver) {
@@ -535,7 +630,17 @@ public final class JobControllerGrpc {
           getChannel().newCall(getUpdateJobMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Starts a job cancellation request. To access the job resource
+     * after cancellation, call
+     * [regions/{region}/jobs.list](https://cloud.google.com/dataproc/docs/reference/rest/v1beta2/projects.regions.jobs/list)
+     * or
+     * [regions/{region}/jobs.get](https://cloud.google.com/dataproc/docs/reference/rest/v1beta2/projects.regions.jobs/get).
+     * </pre>
+     */
     public void cancelJob(
         com.google.cloud.dataproc.v1beta2.CancelJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.Job> responseObserver) {
@@ -543,7 +648,14 @@ public final class JobControllerGrpc {
           getChannel().newCall(getCancelJobMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes the job from the project. If the job is active, the delete fails,
+     * and the response returns `FAILED_PRECONDITION`.
+     * </pre>
+     */
     public void deleteJob(
         com.google.cloud.dataproc.v1beta2.DeleteJobRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -552,7 +664,13 @@ public final class JobControllerGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * The JobController provides methods to manage jobs.
+   * </pre>
+   */
   public static final class JobControllerBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<JobControllerBlockingStub> {
     private JobControllerBlockingStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -565,51 +683,104 @@ public final class JobControllerGrpc {
       return new JobControllerBlockingStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Submits a job to a cluster.
+     * </pre>
+     */
     public com.google.cloud.dataproc.v1beta2.Job submitJob(
         com.google.cloud.dataproc.v1beta2.SubmitJobRequest request) {
       return blockingUnaryCall(getChannel(), getSubmitJobMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Submits job to a cluster.
+     * </pre>
+     */
     public com.google.longrunning.Operation submitJobAsOperation(
         com.google.cloud.dataproc.v1beta2.SubmitJobRequest request) {
       return blockingUnaryCall(
           getChannel(), getSubmitJobAsOperationMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets the resource representation for a job in a project.
+     * </pre>
+     */
     public com.google.cloud.dataproc.v1beta2.Job getJob(
         com.google.cloud.dataproc.v1beta2.GetJobRequest request) {
       return blockingUnaryCall(getChannel(), getGetJobMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists regions/{region}/jobs in a project.
+     * </pre>
+     */
     public com.google.cloud.dataproc.v1beta2.ListJobsResponse listJobs(
         com.google.cloud.dataproc.v1beta2.ListJobsRequest request) {
       return blockingUnaryCall(getChannel(), getListJobsMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates a job in a project.
+     * </pre>
+     */
     public com.google.cloud.dataproc.v1beta2.Job updateJob(
         com.google.cloud.dataproc.v1beta2.UpdateJobRequest request) {
       return blockingUnaryCall(getChannel(), getUpdateJobMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Starts a job cancellation request. To access the job resource
+     * after cancellation, call
+     * [regions/{region}/jobs.list](https://cloud.google.com/dataproc/docs/reference/rest/v1beta2/projects.regions.jobs/list)
+     * or
+     * [regions/{region}/jobs.get](https://cloud.google.com/dataproc/docs/reference/rest/v1beta2/projects.regions.jobs/get).
+     * </pre>
+     */
     public com.google.cloud.dataproc.v1beta2.Job cancelJob(
         com.google.cloud.dataproc.v1beta2.CancelJobRequest request) {
       return blockingUnaryCall(getChannel(), getCancelJobMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes the job from the project. If the job is active, the delete fails,
+     * and the response returns `FAILED_PRECONDITION`.
+     * </pre>
+     */
     public com.google.protobuf.Empty deleteJob(
         com.google.cloud.dataproc.v1beta2.DeleteJobRequest request) {
       return blockingUnaryCall(getChannel(), getDeleteJobMethod(), getCallOptions(), request);
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * The JobController provides methods to manage jobs.
+   * </pre>
+   */
   public static final class JobControllerFutureStub
       extends io.grpc.stub.AbstractFutureStub<JobControllerFutureStub> {
     private JobControllerFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -622,45 +793,92 @@ public final class JobControllerGrpc {
       return new JobControllerFutureStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Submits a job to a cluster.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.cloud.dataproc.v1beta2.Job>
         submitJob(com.google.cloud.dataproc.v1beta2.SubmitJobRequest request) {
       return futureUnaryCall(getChannel().newCall(getSubmitJobMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Submits job to a cluster.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         submitJobAsOperation(com.google.cloud.dataproc.v1beta2.SubmitJobRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getSubmitJobAsOperationMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets the resource representation for a job in a project.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.cloud.dataproc.v1beta2.Job>
         getJob(com.google.cloud.dataproc.v1beta2.GetJobRequest request) {
       return futureUnaryCall(getChannel().newCall(getGetJobMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists regions/{region}/jobs in a project.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.dataproc.v1beta2.ListJobsResponse>
         listJobs(com.google.cloud.dataproc.v1beta2.ListJobsRequest request) {
       return futureUnaryCall(getChannel().newCall(getListJobsMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates a job in a project.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.cloud.dataproc.v1beta2.Job>
         updateJob(com.google.cloud.dataproc.v1beta2.UpdateJobRequest request) {
       return futureUnaryCall(getChannel().newCall(getUpdateJobMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Starts a job cancellation request. To access the job resource
+     * after cancellation, call
+     * [regions/{region}/jobs.list](https://cloud.google.com/dataproc/docs/reference/rest/v1beta2/projects.regions.jobs/list)
+     * or
+     * [regions/{region}/jobs.get](https://cloud.google.com/dataproc/docs/reference/rest/v1beta2/projects.regions.jobs/get).
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.cloud.dataproc.v1beta2.Job>
         cancelJob(com.google.cloud.dataproc.v1beta2.CancelJobRequest request) {
       return futureUnaryCall(getChannel().newCall(getCancelJobMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes the job from the project. If the job is active, the delete fails,
+     * and the response returns `FAILED_PRECONDITION`.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty> deleteJob(
         com.google.cloud.dataproc.v1beta2.DeleteJobRequest request) {
       return futureUnaryCall(getChannel().newCall(getDeleteJobMethod(), getCallOptions()), request);

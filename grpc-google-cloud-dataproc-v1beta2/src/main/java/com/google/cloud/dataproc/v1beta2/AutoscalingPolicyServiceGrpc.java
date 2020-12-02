@@ -22,14 +22,7 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/**
- *
- *
- * <pre>
- * The API interface for managing autoscaling policies in the
- * Cloud Dataproc API.
- * </pre>
- */
+/** */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/dataproc/v1beta2/autoscaling_policies.proto")
@@ -345,23 +338,10 @@ public final class AutoscalingPolicyServiceGrpc {
     return AutoscalingPolicyServiceFutureStub.newStub(factory, channel);
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * The API interface for managing autoscaling policies in the
-   * Cloud Dataproc API.
-   * </pre>
-   */
+  /** */
   public abstract static class AutoscalingPolicyServiceImplBase implements io.grpc.BindableService {
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates new autoscaling policy.
-     * </pre>
-     */
+    /** */
     public void createAutoscalingPolicy(
         com.google.cloud.dataproc.v1beta2.CreateAutoscalingPolicyRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.AutoscalingPolicy>
@@ -369,15 +349,7 @@ public final class AutoscalingPolicyServiceGrpc {
       asyncUnimplementedUnaryCall(getCreateAutoscalingPolicyMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates (replaces) autoscaling policy.
-     * Disabled check for update_mask, because all updates will be full
-     * replacements.
-     * </pre>
-     */
+    /** */
     public void updateAutoscalingPolicy(
         com.google.cloud.dataproc.v1beta2.UpdateAutoscalingPolicyRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.AutoscalingPolicy>
@@ -385,13 +357,7 @@ public final class AutoscalingPolicyServiceGrpc {
       asyncUnimplementedUnaryCall(getUpdateAutoscalingPolicyMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Retrieves autoscaling policy.
-     * </pre>
-     */
+    /** */
     public void getAutoscalingPolicy(
         com.google.cloud.dataproc.v1beta2.GetAutoscalingPolicyRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.AutoscalingPolicy>
@@ -399,13 +365,7 @@ public final class AutoscalingPolicyServiceGrpc {
       asyncUnimplementedUnaryCall(getGetAutoscalingPolicyMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists autoscaling policies in the project.
-     * </pre>
-     */
+    /** */
     public void listAutoscalingPolicies(
         com.google.cloud.dataproc.v1beta2.ListAutoscalingPoliciesRequest request,
         io.grpc.stub.StreamObserver<
@@ -414,14 +374,7 @@ public final class AutoscalingPolicyServiceGrpc {
       asyncUnimplementedUnaryCall(getListAutoscalingPoliciesMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes an autoscaling policy. It is an error to delete an autoscaling
-     * policy that is in use by one or more clusters.
-     * </pre>
-     */
+    /** */
     public void deleteAutoscalingPolicy(
         com.google.cloud.dataproc.v1beta2.DeleteAutoscalingPolicyRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -469,14 +422,7 @@ public final class AutoscalingPolicyServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * The API interface for managing autoscaling policies in the
-   * Cloud Dataproc API.
-   * </pre>
-   */
+  /** */
   public static final class AutoscalingPolicyServiceStub
       extends io.grpc.stub.AbstractAsyncStub<AutoscalingPolicyServiceStub> {
     private AutoscalingPolicyServiceStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -489,13 +435,7 @@ public final class AutoscalingPolicyServiceGrpc {
       return new AutoscalingPolicyServiceStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates new autoscaling policy.
-     * </pre>
-     */
+    /** */
     public void createAutoscalingPolicy(
         com.google.cloud.dataproc.v1beta2.CreateAutoscalingPolicyRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.AutoscalingPolicy>
@@ -506,15 +446,7 @@ public final class AutoscalingPolicyServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates (replaces) autoscaling policy.
-     * Disabled check for update_mask, because all updates will be full
-     * replacements.
-     * </pre>
-     */
+    /** */
     public void updateAutoscalingPolicy(
         com.google.cloud.dataproc.v1beta2.UpdateAutoscalingPolicyRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.AutoscalingPolicy>
@@ -525,13 +457,7 @@ public final class AutoscalingPolicyServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Retrieves autoscaling policy.
-     * </pre>
-     */
+    /** */
     public void getAutoscalingPolicy(
         com.google.cloud.dataproc.v1beta2.GetAutoscalingPolicyRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.dataproc.v1beta2.AutoscalingPolicy>
@@ -542,13 +468,7 @@ public final class AutoscalingPolicyServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists autoscaling policies in the project.
-     * </pre>
-     */
+    /** */
     public void listAutoscalingPolicies(
         com.google.cloud.dataproc.v1beta2.ListAutoscalingPoliciesRequest request,
         io.grpc.stub.StreamObserver<
@@ -560,14 +480,7 @@ public final class AutoscalingPolicyServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes an autoscaling policy. It is an error to delete an autoscaling
-     * policy that is in use by one or more clusters.
-     * </pre>
-     */
+    /** */
     public void deleteAutoscalingPolicy(
         com.google.cloud.dataproc.v1beta2.DeleteAutoscalingPolicyRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -578,14 +491,7 @@ public final class AutoscalingPolicyServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * The API interface for managing autoscaling policies in the
-   * Cloud Dataproc API.
-   * </pre>
-   */
+  /** */
   public static final class AutoscalingPolicyServiceBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<AutoscalingPolicyServiceBlockingStub> {
     private AutoscalingPolicyServiceBlockingStub(
@@ -599,54 +505,28 @@ public final class AutoscalingPolicyServiceGrpc {
       return new AutoscalingPolicyServiceBlockingStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates new autoscaling policy.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.dataproc.v1beta2.AutoscalingPolicy createAutoscalingPolicy(
         com.google.cloud.dataproc.v1beta2.CreateAutoscalingPolicyRequest request) {
       return blockingUnaryCall(
           getChannel(), getCreateAutoscalingPolicyMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates (replaces) autoscaling policy.
-     * Disabled check for update_mask, because all updates will be full
-     * replacements.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.dataproc.v1beta2.AutoscalingPolicy updateAutoscalingPolicy(
         com.google.cloud.dataproc.v1beta2.UpdateAutoscalingPolicyRequest request) {
       return blockingUnaryCall(
           getChannel(), getUpdateAutoscalingPolicyMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Retrieves autoscaling policy.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.dataproc.v1beta2.AutoscalingPolicy getAutoscalingPolicy(
         com.google.cloud.dataproc.v1beta2.GetAutoscalingPolicyRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetAutoscalingPolicyMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists autoscaling policies in the project.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.dataproc.v1beta2.ListAutoscalingPoliciesResponse
         listAutoscalingPolicies(
             com.google.cloud.dataproc.v1beta2.ListAutoscalingPoliciesRequest request) {
@@ -654,14 +534,7 @@ public final class AutoscalingPolicyServiceGrpc {
           getChannel(), getListAutoscalingPoliciesMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes an autoscaling policy. It is an error to delete an autoscaling
-     * policy that is in use by one or more clusters.
-     * </pre>
-     */
+    /** */
     public com.google.protobuf.Empty deleteAutoscalingPolicy(
         com.google.cloud.dataproc.v1beta2.DeleteAutoscalingPolicyRequest request) {
       return blockingUnaryCall(
@@ -669,14 +542,7 @@ public final class AutoscalingPolicyServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * The API interface for managing autoscaling policies in the
-   * Cloud Dataproc API.
-   * </pre>
-   */
+  /** */
   public static final class AutoscalingPolicyServiceFutureStub
       extends io.grpc.stub.AbstractFutureStub<AutoscalingPolicyServiceFutureStub> {
     private AutoscalingPolicyServiceFutureStub(
@@ -690,13 +556,7 @@ public final class AutoscalingPolicyServiceGrpc {
       return new AutoscalingPolicyServiceFutureStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates new autoscaling policy.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.dataproc.v1beta2.AutoscalingPolicy>
         createAutoscalingPolicy(
@@ -705,15 +565,7 @@ public final class AutoscalingPolicyServiceGrpc {
           getChannel().newCall(getCreateAutoscalingPolicyMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates (replaces) autoscaling policy.
-     * Disabled check for update_mask, because all updates will be full
-     * replacements.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.dataproc.v1beta2.AutoscalingPolicy>
         updateAutoscalingPolicy(
@@ -722,13 +574,7 @@ public final class AutoscalingPolicyServiceGrpc {
           getChannel().newCall(getUpdateAutoscalingPolicyMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Retrieves autoscaling policy.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.dataproc.v1beta2.AutoscalingPolicy>
         getAutoscalingPolicy(
@@ -737,13 +583,7 @@ public final class AutoscalingPolicyServiceGrpc {
           getChannel().newCall(getGetAutoscalingPolicyMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists autoscaling policies in the project.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.dataproc.v1beta2.ListAutoscalingPoliciesResponse>
         listAutoscalingPolicies(
@@ -752,14 +592,7 @@ public final class AutoscalingPolicyServiceGrpc {
           getChannel().newCall(getListAutoscalingPoliciesMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes an autoscaling policy. It is an error to delete an autoscaling
-     * policy that is in use by one or more clusters.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deleteAutoscalingPolicy(
             com.google.cloud.dataproc.v1beta2.DeleteAutoscalingPolicyRequest request) {

@@ -4,23 +4,23 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-dataproc.git",
-        "sha": "185358356c18486a260837875cd4790a77fe417f"
+        "sha": "299b16879c3ee155b300fbb53ca4735e580cfe83"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "6fd07563a2f1a6785066f5955ad9659a315e4492",
-        "internalRef": "324941614"
+        "sha": "269083b6ed01aa5a1f445462fcc61e05471cd8f8",
+        "internalRef": "345127100"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "6fd07563a2f1a6785066f5955ad9659a315e4492",
-        "internalRef": "324941614"
+        "sha": "269083b6ed01aa5a1f445462fcc61e05471cd8f8",
+        "internalRef": "345127100"
       }
     },
     {

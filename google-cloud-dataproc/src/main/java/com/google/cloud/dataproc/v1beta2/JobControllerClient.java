@@ -161,8 +161,7 @@ public class JobControllerClient implements BackgroundResource {
   /**
    * Submits a job to a cluster.
    *
-   * @param project_id Required. The ID of the Google Cloud Platform project that the job belongs
-   *     to.
+   * @param projectId Required. The ID of the Google Cloud Platform project that the job belongs to.
    * @param region Required. The Dataproc region in which to handle the request.
    * @param job Required. The job resource.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -198,8 +197,7 @@ public class JobControllerClient implements BackgroundResource {
   /**
    * Submits job to a cluster.
    *
-   * @param project_id Required. The ID of the Google Cloud Platform project that the job belongs
-   *     to.
+   * @param projectId Required. The ID of the Google Cloud Platform project that the job belongs to.
    * @param region Required. The Dataproc region in which to handle the request.
    * @param job Required. The job resource.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -248,10 +246,9 @@ public class JobControllerClient implements BackgroundResource {
   /**
    * Gets the resource representation for a job in a project.
    *
-   * @param project_id Required. The ID of the Google Cloud Platform project that the job belongs
-   *     to.
+   * @param projectId Required. The ID of the Google Cloud Platform project that the job belongs to.
    * @param region Required. The Dataproc region in which to handle the request.
-   * @param job_id Required. The job ID.
+   * @param jobId Required. The job ID.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Job getJob(String projectId, String region, String jobId) {
@@ -289,8 +286,7 @@ public class JobControllerClient implements BackgroundResource {
   /**
    * Lists regions/{region}/jobs in a project.
    *
-   * @param project_id Required. The ID of the Google Cloud Platform project that the job belongs
-   *     to.
+   * @param projectId Required. The ID of the Google Cloud Platform project that the job belongs to.
    * @param region Required. The Dataproc region in which to handle the request.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -304,8 +300,7 @@ public class JobControllerClient implements BackgroundResource {
   /**
    * Lists regions/{region}/jobs in a project.
    *
-   * @param project_id Required. The ID of the Google Cloud Platform project that the job belongs
-   *     to.
+   * @param projectId Required. The ID of the Google Cloud Platform project that the job belongs to.
    * @param region Required. The Dataproc region in which to handle the request.
    * @param filter Optional. A filter constraining the jobs to list. Filters are case-sensitive and
    *     have the following syntax:
@@ -387,10 +382,9 @@ public class JobControllerClient implements BackgroundResource {
    * or
    * [regions/{region}/jobs.get](https://cloud.google.com/dataproc/docs/reference/rest/v1beta2/projects.regions.jobs/get).
    *
-   * @param project_id Required. The ID of the Google Cloud Platform project that the job belongs
-   *     to.
+   * @param projectId Required. The ID of the Google Cloud Platform project that the job belongs to.
    * @param region Required. The Dataproc region in which to handle the request.
-   * @param job_id Required. The job ID.
+   * @param jobId Required. The job ID.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Job cancelJob(String projectId, String region, String jobId) {
@@ -435,10 +429,9 @@ public class JobControllerClient implements BackgroundResource {
    * Deletes the job from the project. If the job is active, the delete fails, and the response
    * returns `FAILED_PRECONDITION`.
    *
-   * @param project_id Required. The ID of the Google Cloud Platform project that the job belongs
-   *     to.
+   * @param projectId Required. The ID of the Google Cloud Platform project that the job belongs to.
    * @param region Required. The Dataproc region in which to handle the request.
-   * @param job_id Required. The job ID.
+   * @param jobId Required. The job ID.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final void deleteJob(String projectId, String region, String jobId) {

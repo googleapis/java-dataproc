@@ -168,8 +168,8 @@ public class ClusterControllerClient implements BackgroundResource {
    * [Operation.metadata][google.longrunning.Operation.metadata] will be
    * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1#clusteroperationmetadata).
    *
-   * @param project_id Required. The ID of the Google Cloud Platform project that the cluster
-   *     belongs to.
+   * @param projectId Required. The ID of the Google Cloud Platform project that the cluster belongs
+   *     to.
    * @param region Required. The Dataproc region in which to handle the request.
    * @param cluster Required. The cluster to create.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -230,11 +230,11 @@ public class ClusterControllerClient implements BackgroundResource {
    * [Operation.metadata][google.longrunning.Operation.metadata] will be
    * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1#clusteroperationmetadata).
    *
-   * @param project_id Required. The ID of the Google Cloud Platform project the cluster belongs to.
+   * @param projectId Required. The ID of the Google Cloud Platform project the cluster belongs to.
    * @param region Required. The Dataproc region in which to handle the request.
-   * @param cluster_name Required. The cluster name.
+   * @param clusterName Required. The cluster name.
    * @param cluster Required. The changes to the cluster.
-   * @param update_mask Required. Specifies the path, relative to `Cluster`, of the field to update.
+   * @param updateMask Required. Specifies the path, relative to `Cluster`, of the field to update.
    *     For example, to change the number of workers in a cluster to 5, the `update_mask` parameter
    *     would be specified as `config.worker_config.num_instances`, and the `PATCH` request body
    *     would specify the new value, as follows:
@@ -315,10 +315,10 @@ public class ClusterControllerClient implements BackgroundResource {
    * [Operation.metadata][google.longrunning.Operation.metadata] will be
    * [ClusterOperationMetadata](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1#clusteroperationmetadata).
    *
-   * @param project_id Required. The ID of the Google Cloud Platform project that the cluster
-   *     belongs to.
+   * @param projectId Required. The ID of the Google Cloud Platform project that the cluster belongs
+   *     to.
    * @param region Required. The Dataproc region in which to handle the request.
-   * @param cluster_name Required. The cluster name.
+   * @param clusterName Required. The cluster name.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final OperationFuture<Empty, ClusterOperationMetadata> deleteClusterAsync(
@@ -375,10 +375,10 @@ public class ClusterControllerClient implements BackgroundResource {
   /**
    * Gets the resource representation for a cluster in a project.
    *
-   * @param project_id Required. The ID of the Google Cloud Platform project that the cluster
-   *     belongs to.
+   * @param projectId Required. The ID of the Google Cloud Platform project that the cluster belongs
+   *     to.
    * @param region Required. The Dataproc region in which to handle the request.
-   * @param cluster_name Required. The cluster name.
+   * @param clusterName Required. The cluster name.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Cluster getCluster(String projectId, String region, String clusterName) {
@@ -416,8 +416,8 @@ public class ClusterControllerClient implements BackgroundResource {
   /**
    * Lists all regions/{region}/clusters in a project alphabetically.
    *
-   * @param project_id Required. The ID of the Google Cloud Platform project that the cluster
-   *     belongs to.
+   * @param projectId Required. The ID of the Google Cloud Platform project that the cluster belongs
+   *     to.
    * @param region Required. The Dataproc region in which to handle the request.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -431,8 +431,8 @@ public class ClusterControllerClient implements BackgroundResource {
   /**
    * Lists all regions/{region}/clusters in a project alphabetically.
    *
-   * @param project_id Required. The ID of the Google Cloud Platform project that the cluster
-   *     belongs to.
+   * @param projectId Required. The ID of the Google Cloud Platform project that the cluster belongs
+   *     to.
    * @param region Required. The Dataproc region in which to handle the request.
    * @param filter Optional. A filter constraining the clusters to list. Filters are case-sensitive
    *     and have the following syntax:
@@ -502,10 +502,10 @@ public class ClusterControllerClient implements BackgroundResource {
    * contains
    * [DiagnoseClusterResults](https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1#diagnoseclusterresults).
    *
-   * @param project_id Required. The ID of the Google Cloud Platform project that the cluster
-   *     belongs to.
+   * @param projectId Required. The ID of the Google Cloud Platform project that the cluster belongs
+   *     to.
    * @param region Required. The Dataproc region in which to handle the request.
-   * @param cluster_name Required. The cluster name.
+   * @param clusterName Required. The cluster name.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final OperationFuture<DiagnoseClusterResults, ClusterOperationMetadata>

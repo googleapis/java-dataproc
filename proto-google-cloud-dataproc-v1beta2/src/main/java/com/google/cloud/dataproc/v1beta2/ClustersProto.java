@@ -395,10 +395,15 @@ public final class ClustersProto {
           + "uf.Empty\0226google.cloud.dataproc.v1beta2."
           + "ClusterOperationMetadata\032K\312A\027dataproc.go"
           + "ogleapis.com\322A.https://www.googleapis.co"
-          + "m/auth/cloud-platformB{\n!com.google.clou"
-          + "d.dataproc.v1beta2B\rClustersProtoP\001ZEgoo"
-          + "gle.golang.org/genproto/googleapis/cloud"
-          + "/dataproc/v1beta2;dataprocb\006proto3"
+          + "m/auth/cloud-platformB\275\002\n!com.google.clo"
+          + "ud.dataproc.v1beta2B\rClustersProtoP\001ZEgo"
+          + "ogle.golang.org/genproto/googleapis/clou"
+          + "d/dataproc/v1beta2;dataproc\352A^\n containe"
+          + "r.googleapis.com/Cluster\022:projects/{proj"
+          + "ect}/locations/{location}/clusters/{clus"
+          + "ter}\352A^\n metastore.googleapis.com/Servic"
+          + "e\022:projects/{project}/locations/{locatio"
+          + "n}/services/{service}b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
@@ -762,6 +767,7 @@ public final class ClustersProto {
     registry.add(com.google.api.AnnotationsProto.http);
     registry.add(com.google.api.ClientProto.methodSignature);
     registry.add(com.google.api.ClientProto.oauthScopes);
+    registry.add(com.google.api.ResourceProto.resourceDefinition);
     registry.add(com.google.api.ResourceProto.resourceReference);
     registry.add(com.google.longrunning.OperationsProto.operationInfo);
     com.google.protobuf.Descriptors.FileDescriptor.internalUpdateFileDescriptor(

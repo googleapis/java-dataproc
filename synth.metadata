@@ -11,16 +11,16 @@
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "269083b6ed01aa5a1f445462fcc61e05471cd8f8",
-        "internalRef": "345127100"
+        "sha": "565b9a5f01d7154825c657bca5ee244e86aad918",
+        "internalRef": "346132878"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "269083b6ed01aa5a1f445462fcc61e05471cd8f8",
-        "internalRef": "345127100"
+        "sha": "565b9a5f01d7154825c657bca5ee244e86aad918",
+        "internalRef": "346132878"
       }
     },
     {
@@ -170,7 +170,6 @@
     "google-cloud-dataproc/src/main/java/com/google/cloud/dataproc/v1beta2/stub/WorkflowTemplateServiceStubSettings.java",
     "google-cloud-dataproc/src/test/java/com/google/cloud/dataproc/v1/AutoscalingPolicyServiceClientTest.java",
     "google-cloud-dataproc/src/test/java/com/google/cloud/dataproc/v1/ClusterControllerClientTest.java",
-    "google-cloud-dataproc/src/test/java/com/google/cloud/dataproc/v1/ClusterControllerSmokeTest.java",
     "google-cloud-dataproc/src/test/java/com/google/cloud/dataproc/v1/JobControllerClientTest.java",
     "google-cloud-dataproc/src/test/java/com/google/cloud/dataproc/v1/MockAutoscalingPolicyService.java",
     "google-cloud-dataproc/src/test/java/com/google/cloud/dataproc/v1/MockAutoscalingPolicyServiceImpl.java",
@@ -183,7 +182,6 @@
     "google-cloud-dataproc/src/test/java/com/google/cloud/dataproc/v1/WorkflowTemplateServiceClientTest.java",
     "google-cloud-dataproc/src/test/java/com/google/cloud/dataproc/v1beta2/AutoscalingPolicyServiceClientTest.java",
     "google-cloud-dataproc/src/test/java/com/google/cloud/dataproc/v1beta2/ClusterControllerClientTest.java",
-    "google-cloud-dataproc/src/test/java/com/google/cloud/dataproc/v1beta2/ClusterControllerSmokeTest.java",
     "google-cloud-dataproc/src/test/java/com/google/cloud/dataproc/v1beta2/JobControllerClientTest.java",
     "google-cloud-dataproc/src/test/java/com/google/cloud/dataproc/v1beta2/MockAutoscalingPolicyService.java",
     "google-cloud-dataproc/src/test/java/com/google/cloud/dataproc/v1beta2/MockAutoscalingPolicyServiceImpl.java",

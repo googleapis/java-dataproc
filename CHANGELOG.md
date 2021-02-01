@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://www.github.com/googleapis/java-dataproc/compare/v1.1.10...v1.2.0) (2021-02-01)
+
+
+### Features
+
+* **v1beta2:** remove DOCKER/FLINK enums from Component, add fields to ClusterConfig, InstanceGroupConfig, WorkflowTemplate, WorkflowMetadata ([#411](https://www.github.com/googleapis/java-dataproc/issues/411)) ([e8025d4](https://www.github.com/googleapis/java-dataproc/commit/e8025d4a5dd68b430b25e60cac823f570bdab3f4))
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v0.18.0 ([#422](https://www.github.com/googleapis/java-dataproc/issues/422)) ([69a78e1](https://www.github.com/googleapis/java-dataproc/commit/69a78e192957f1c00943be624ce29fe2e2d333cb))
+* update dependency com.google.cloud:google-cloud-storage to v1.113.9 ([#416](https://www.github.com/googleapis/java-dataproc/issues/416)) ([d7503e7](https://www.github.com/googleapis/java-dataproc/commit/d7503e7c005c240672741fbc5541a7281c55be23))
+
 ### [1.1.10](https://www.github.com/googleapis/java-dataproc/compare/v1.1.9...v1.1.10) (2020-12-16)
 
 

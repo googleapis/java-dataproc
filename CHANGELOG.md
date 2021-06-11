@@ -1,5 +1,31 @@
 # Changelog
 
+### [1.5.2](https://www.github.com/googleapis/java-dataproc/compare/v1.5.1...v1.5.2) (2021-06-04)
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v1.3.0 ([#572](https://www.github.com/googleapis/java-dataproc/issues/572)) ([525af16](https://www.github.com/googleapis/java-dataproc/commit/525af16403796180618787c4bca29777104a66bc))
+
+### [1.5.1](https://www.github.com/googleapis/java-dataproc/compare/v1.5.0...v1.5.1) (2021-06-02)
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-storage to v1.115.0 ([#565](https://www.github.com/googleapis/java-dataproc/issues/565)) ([9183a22](https://www.github.com/googleapis/java-dataproc/commit/9183a2251b9fbaf07b62ad6fa2e2dc04659ec779))
+
+## [1.5.0](https://www.github.com/googleapis/java-dataproc/compare/v1.4.3...v1.5.0) (2021-05-31)
+
+
+### Features
+
+* add `gcf-owl-bot[bot]` to `ignoreAuthors` ([#554](https://www.github.com/googleapis/java-dataproc/issues/554)) ([c6fbf45](https://www.github.com/googleapis/java-dataproc/commit/c6fbf45f964242cd249e6aebfd85b8d63cf1697c))
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v1.2.0 ([#553](https://www.github.com/googleapis/java-dataproc/issues/553)) ([2fe5a5d](https://www.github.com/googleapis/java-dataproc/commit/2fe5a5de5ad05ac83c948d59edb1fecb6f3f12d6))
+
 ### [1.4.3](https://www.github.com/googleapis/java-dataproc/compare/v1.4.2...v1.4.3) (2021-05-14)
 
 

@@ -1133,7 +1133,7 @@ public final class OrderedJob extends com.google.protobuf.GeneratedMessageV3
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (!getStepIdBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(stepId_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, stepId_);
     }
     if (jobTypeCase_ == 2) {
@@ -1178,7 +1178,7 @@ public final class OrderedJob extends com.google.protobuf.GeneratedMessageV3
     if (size != -1) return size;
 
     size = 0;
-    if (!getStepIdBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(stepId_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, stepId_);
     }
     if (jobTypeCase_ == 2) {

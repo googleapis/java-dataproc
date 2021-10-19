@@ -725,10 +725,10 @@ public final class UpdateClusterRequest extends com.google.protobuf.GeneratedMes
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (!getProjectIdBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(projectId_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, projectId_);
     }
-    if (!getClusterNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clusterName_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, clusterName_);
     }
     if (cluster_ != null) {
@@ -737,13 +737,13 @@ public final class UpdateClusterRequest extends com.google.protobuf.GeneratedMes
     if (updateMask_ != null) {
       output.writeMessage(4, getUpdateMask());
     }
-    if (!getRegionBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(region_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 5, region_);
     }
     if (gracefulDecommissionTimeout_ != null) {
       output.writeMessage(6, getGracefulDecommissionTimeout());
     }
-    if (!getRequestIdBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(requestId_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 7, requestId_);
     }
     unknownFields.writeTo(output);
@@ -755,10 +755,10 @@ public final class UpdateClusterRequest extends com.google.protobuf.GeneratedMes
     if (size != -1) return size;
 
     size = 0;
-    if (!getProjectIdBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(projectId_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, projectId_);
     }
-    if (!getClusterNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clusterName_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, clusterName_);
     }
     if (cluster_ != null) {
@@ -767,7 +767,7 @@ public final class UpdateClusterRequest extends com.google.protobuf.GeneratedMes
     if (updateMask_ != null) {
       size += com.google.protobuf.CodedOutputStream.computeMessageSize(4, getUpdateMask());
     }
-    if (!getRegionBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(region_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, region_);
     }
     if (gracefulDecommissionTimeout_ != null) {
@@ -775,7 +775,7 @@ public final class UpdateClusterRequest extends com.google.protobuf.GeneratedMes
           com.google.protobuf.CodedOutputStream.computeMessageSize(
               6, getGracefulDecommissionTimeout());
     }
-    if (!getRequestIdBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(requestId_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, requestId_);
     }
     size += unknownFields.getSerializedSize();

@@ -1307,10 +1307,10 @@ public final class GceClusterConfig extends com.google.protobuf.GeneratedMessage
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (!getZoneUriBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(zoneUri_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, zoneUri_);
     }
-    if (!getNetworkUriBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(networkUri_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, networkUri_);
     }
     for (int i = 0; i < serviceAccountScopes_.size(); i++) {
@@ -1322,13 +1322,13 @@ public final class GceClusterConfig extends com.google.protobuf.GeneratedMessage
     }
     com.google.protobuf.GeneratedMessageV3.serializeStringMapTo(
         output, internalGetMetadata(), MetadataDefaultEntryHolder.defaultEntry, 5);
-    if (!getSubnetworkUriBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(subnetworkUri_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 6, subnetworkUri_);
     }
     if (internalIpOnly_ != false) {
       output.writeBool(7, internalIpOnly_);
     }
-    if (!getServiceAccountBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(serviceAccount_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 8, serviceAccount_);
     }
     if (reservationAffinity_ != null) {
@@ -1358,10 +1358,10 @@ public final class GceClusterConfig extends com.google.protobuf.GeneratedMessage
     if (size != -1) return size;
 
     size = 0;
-    if (!getZoneUriBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(zoneUri_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, zoneUri_);
     }
-    if (!getNetworkUriBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(networkUri_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, networkUri_);
     }
     {
@@ -1390,13 +1390,13 @@ public final class GceClusterConfig extends com.google.protobuf.GeneratedMessage
               .build();
       size += com.google.protobuf.CodedOutputStream.computeMessageSize(5, metadata__);
     }
-    if (!getSubnetworkUriBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(subnetworkUri_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, subnetworkUri_);
     }
     if (internalIpOnly_ != false) {
       size += com.google.protobuf.CodedOutputStream.computeBoolSize(7, internalIpOnly_);
     }
-    if (!getServiceAccountBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(serviceAccount_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, serviceAccount_);
     }
     if (reservationAffinity_ != null) {

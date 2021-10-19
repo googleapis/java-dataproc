@@ -310,7 +310,7 @@ public final class RuntimeInfo extends com.google.protobuf.GeneratedMessageV3
   public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
     com.google.protobuf.GeneratedMessageV3.serializeStringMapTo(
         output, internalGetEndpoints(), EndpointsDefaultEntryHolder.defaultEntry, 1);
-    if (!getOutputUriBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(outputUri_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, outputUri_);
     }
     unknownFields.writeTo(output);
@@ -332,7 +332,7 @@ public final class RuntimeInfo extends com.google.protobuf.GeneratedMessageV3
               .build();
       size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, endpoints__);
     }
-    if (!getOutputUriBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(outputUri_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, outputUri_);
     }
     size += unknownFields.getSerializedSize();

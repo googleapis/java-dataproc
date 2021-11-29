@@ -484,8 +484,7 @@ public final class JobsProto {
           + "\010ListJobs\022).google.cloud.dataproc.v1.ListJobsRequest\032*.google.cloud.dataproc.v1.ListJobsResponse\"f\202\323\344\223\0021\022//v1/projects/{project_id}/regions/{region}/jobs\332A\021project_id,region\332A\030project_id,region,filter\022\235\001\n"
           + "\tUpdateJob\022*.google.cloud.dataproc.v1.UpdateJobRequest\032\035.google.cloud.dataproc.v1.Job\"E\202\323\344\223\002?28/v1/projects/{project_id}/regions/{region}/jobs/{job_id}:\003job\022\275\001\n"
           + "\tCancelJob\022*.google.cloud.dataproc.v1.CancelJobRequest\032\035.google.cloud.dataproc.v1.Job\"e\202\323\344\223\002D\"?/v1/projects/{project_id}/regions/{region}/jobs/{job_id}:cancel:\001*\332A\030project_id,region,job_id\022\254\001\n"
-          + "\tDeleteJob\022*.google.cloud.dataproc.v1.DeleteJobRequest\032\026.google.prot"
-          + "obuf.Empty\"[\202\323\344\223\002:*8/v1/projects/{project_id}/regions/{region}/jobs/{job_id}\332A\030project_id,region,job_id\032K\312A\027dataproc.googleapis.com\322A.https://www.googleapis.com/auth/cloud-platformBm\n"
+          + "\tDeleteJob\022*.google.cloud.dataproc.v1.DeleteJobRequest\032\026.google.protobuf.Empty\"[\202\323\344\223\002:*8/v1/projects/{project_id}/regions/{region}/jobs/{job_id}\332A\030project_id,region,job_id\032K\312A\027dataproc.googleapis.com\322A.https://www.googleapis.com/auth/cloud-platformBm\n"
           + "\034com.google.cloud.dataproc.v1B\tJobsProtoP\001Z@google.golang"
           + ".org/genproto/googleapis/cloud/dataproc/v1;dataprocb\006proto3"
     };

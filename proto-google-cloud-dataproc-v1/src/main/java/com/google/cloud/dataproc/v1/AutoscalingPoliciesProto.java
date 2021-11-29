@@ -81,8 +81,7 @@ public final class AutoscalingPoliciesProto {
   static {
     java.lang.String[] descriptorData = {
       "\n"
-          + "3google/cloud/dataproc/v1/autoscaling_p"
-          + "olicies.proto\022\030google.cloud.dataproc.v1\032\034google/api/annotations.proto\032\027google/api/client.proto\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\032\036google/protobuf/duration.proto\032\033google/protobuf/empty.proto\"\245\005\n"
+          + "3google/cloud/dataproc/v1/autoscaling_policies.proto\022\030google.cloud.dataproc.v1\032\034google/api/annotations.proto\032\027google/api/client.proto\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\032\036google/protobuf/duration.proto\032\033google/protobuf/empty.proto\"\245\005\n"
           + "\021AutoscalingPolicy\022\n\n"
           + "\002id\030\001 \001(\t\022\021\n"
           + "\004name\030\002 \001(\tB\003\340A\003\022S\n"
@@ -142,8 +141,7 @@ public final class AutoscalingPoliciesProto {
           + "\027CreateAutoscalingPolicy\0228.google.cloud.dataproc.v1.CreateAutoscalingPolicyRequest\032+.google.cloud.dataproc.v1.AutoscalingPolicy\"\231\001\202\323\344\223\002\202\001\"7/v1/{parent=projects/*/locations/*}/autoscalingPolicies:\006policyZ?\"5/v1/{parent=projects/*/regions/*}/autoscalingPolicies:\006policy\332A\r"
           + "parent,policy\022\243\002\n"
           + "\027UpdateAutoscalingPolicy\0228.google.cloud.dataproc.v1.UpdateAutoscalingPolicyRequest\032+.google.cloud.dataproc.v1.AutoscalingPolicy\"\240\001\202\323\344\223\002\220\001\032>/v1/{policy.name=projects/*/locations/*/autoscalingPolicies/*}:\006policyZF\032</v1/{policy.name=projects/*/regions/*/autoscalingPolicies/*}:\006policy\332A\006policy\022\373\001\n"
-          + "\024GetAutoscalingPolicy\0225.google.cloud.dataproc.v"
-          + "1.GetAutoscalingPolicyRequest\032+.google.cloud.dataproc.v1.AutoscalingPolicy\"\177\202\323\344\223\002r\0227/v1/{name=projects/*/locations/*/autoscalingPolicies/*}Z7\0225/v1/{name=projects/*/regions/*/autoscalingPolicies/*}\332A\004name\022\222\002\n"
+          + "\024GetAutoscalingPolicy\0225.google.cloud.dataproc.v1.GetAutoscalingPolicyRequest\032+.google.cloud.dataproc.v1.AutoscalingPolicy\"\177\202\323\344\223\002r\0227/v1/{name=projects/*/locations/*/autoscalingPolicies/*}Z7\0225/v1/{name=projects/*/regions/*/autoscalingPolicies/*}\332A\004name\022\222\002\n"
           + "\027ListAutoscalingPolicies\0228.google.cloud.dataproc.v1.ListAutoscalingPoliciesRequest\0329.google.cloud.dataproc.v1.ListAutoscalingPoliciesResponse\"\201\001\202\323\344\223\002r\0227/v1/{parent=projects/*/locations/*}/autoscalingPoliciesZ7\0225/v1/{parent=projects/*/regions/*}/autoscalingPolicies\332A\006parent\022\354\001\n"
           + "\027DeleteAutoscalingPolicy\0228.google.cloud.dataproc.v1.DeleteAutoscalingPolicyRequest\032\026.google.protobuf.Empty\"\177\202\323\344\223\002r*7/v1/{name=projects/*/locations/*/autoscalingPolicies/*}Z7*5/v1/{name=projects/*/regions/*/autoscalingPolicies/*}\332A\004name\032K\312A\027dataproc.googleapis.com\322A.https://www.googleapis.com/auth/cloud-platformB\304\001\n"
           + "\034com.google.cloud.dataproc.v1B\030AutoscalingPoliciesProtoP\001Z@google.golang.org/genproto/googleapis/cloud/dataproc/v1;dataproc\352AE\n"

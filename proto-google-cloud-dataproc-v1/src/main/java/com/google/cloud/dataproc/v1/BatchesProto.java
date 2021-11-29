@@ -90,8 +90,7 @@ public final class BatchesProto {
     java.lang.String[] descriptorData = {
       "\n"
           + "&google/cloud/dataproc/v1/batches.proto"
-          + "\022\030google.cloud.dataproc.v1\032\034google/api/a"
-          + "nnotations.proto\032\027google/api/client.proto\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\032%google/cloud/dataproc/v1/shared.proto\032#google/longrunning/operations.proto\032\033google/protobuf/empty.proto\032\037google/protobuf/timestamp.proto\"\260\001\n"
+          + "\022\030google.cloud.dataproc.v1\032\034google/api/annotations.proto\032\027google/api/client.proto\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\032%google/cloud/dataproc/v1/shared.proto\032#google/longrunning/operations.proto\032\033google/protobuf/empty.proto\032\037google/protobuf/timestamp.proto\"\260\001\n"
           + "\022CreateBatchRequest\0225\n"
           + "\006parent\030\001 \001("
           + "\tB%\340A\002\372A\037\022\035dataproc.googleapis.com/Batch\0223\n"

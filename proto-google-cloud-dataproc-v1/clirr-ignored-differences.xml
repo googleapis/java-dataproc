@@ -16,4 +16,19 @@
     <className>com/google/cloud/dataproc/v1/*OrBuilder</className>
     <method>boolean has*(*)</method>
   </difference>
+  <difference>
+    <differenceType>7012</differenceType>
+    <className>com/google/cloud/dataproc/v1/ClusterConfig</className>
+    <method>com.google.cloud.dataproc.v1.GkeClusterConfig getGkeClusterConfig(*)</method>
+  </difference>
+  <difference>
+    <differenceType>7012</differenceType>
+    <className>com/google/cloud/dataproc/v1/ClusterConfig</className>
+    <method>com.google.cloud.dataproc.v1.GkeClusterConfigOrBuilder getGkeClusterConfigOrBuilder(*)</method>
+  </difference>
+  <difference>
+    <differenceType>7012</differenceType>
+    <className>com/google/cloud/dataproc/v1/ClusterConfig</className>
+    <method>boolean hasGkeClusterConfig(*)</method>
+  </difference>
 </differences>

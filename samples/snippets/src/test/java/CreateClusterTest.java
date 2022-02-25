@@ -50,13 +50,13 @@ public class CreateClusterTest {
         System.getenv(varName));
   }
 
-/*
-  @BeforeClass
-  public static void checkRequirements() {
-    requireEnv("GOOGLE_APPLICATION_CREDENTIALS");
-   requireEnv("GOOGLE_CLOUD_PROJECT");
-  }
-*/
+  /*
+    @BeforeClass
+    public static void checkRequirements() {
+      requireEnv("GOOGLE_APPLICATION_CREDENTIALS");
+     requireEnv("GOOGLE_CLOUD_PROJECT");
+    }
+  */
 
   @Before
   public void setUp() {

@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Google LLC
+ * Copyright 2022 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -68,6 +68,7 @@ public class CreateClusterTest {
   public void createClusterTest() throws IOException, InterruptedException {
     CreateCluster.createCluster(PROJECT_ID, REGION, CLUSTER_NAME);
     String output = bout.toString();
+    System.out.print(output);
 
     assertThat(output, CoreMatchers.containsString(CLUSTER_NAME));
   }

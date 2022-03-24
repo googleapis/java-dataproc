@@ -60,7 +60,7 @@ public class SubmitHadoopFsJobTest {
   }
 
   @Before
-  public void setUp() throws IOException, ExecutionException, InterruptedException {
+  public void setUp () throws IOException, ExecutionException, InterruptedException {
     bout = new ByteArrayOutputStream();
     System.setOut(new PrintStream(bout));
 
@@ -75,32 +75,34 @@ public class SubmitHadoopFsJobTest {
               .setRegion(REGION)
               .setClusterName(CLUSTER_NAME)
               .build();
-      Cluster response = clusterControllerClient.createlusterAsync(request).get();
-  }
+      Cluster response = clusterControllerClient.createlusterAsync(request);
+      response.get();
+    }
 
-  @Test
-  public void submitHadoopFsJobTest() throws IOException, InterruptedException {
-    SubmitHadoopFsJob.submitHadoopFsJob(PROJECT_ID, REGION, CLUSTER_NAME, HADOOP_FS_QUERY);
-    String output = bout.toString();
+    @Test
+    public void submitHadoopFsJobTest () throws IOException, InterruptedException {
+      SubmitHadoopFsJob.submitHadoopFsJob(PROJECT_ID, REGION, CLUSTER_NAME, HADOOP_FS_QUERY);
+      String output = bout.toString();
 
-    assertThat(output, CoreMatchers.containsString("/tmp"));
-  }
+      assertThat(output, CoreMatchers.containsString("/tmp"));
+    }
 
-  @After
-  public void tearDown() throws IOException, InterruptedException, ExecutionException {
+    @After
+    public void tearDown () throws IOException, InterruptedException, ExecutionException {
 
-    ClusterControllerSettings clusterControllerSettings =
-        ClusterControllerSettings.newBuilder().setEndpoint(ENDPOINT).build();
+      ClusterControllerSettings clusterControllerSettings =
+          ClusterControllerSettings.newBuilder().setEndpoint(ENDPOINT).build();
 
-    try (ClusterControllerClient clusterControllerClient =
-        ClusterControllerClient.create(clusterControllerSettings)) {
-      DeleteClusterRequest request =
-          DeleteClusterRequest.newBuilder()
-              .setProjectId(PROJECT_ID)
-              .setRegion(REGION)
-              .setClusterName(CLUSTER_NAME)
-              .build();
-      Cluster response = clusterControllerClient.deleteClusterAsync(request).get();
+      try (ClusterControllerClient clusterControllerClient =
+          ClusterControllerClient.create(clusterControllerSettings)) {
+        DeleteClusterRequest request =
+            DeleteClusterRequest.newBuilder()
+                .setProjectId(PROJECT_ID)
+                .setRegion(REGION)
+                .setClusterName(CLUSTER_NAME)
+                .build();
+        Cluster response = clusterControllerClient.deleteClusterAsync(request);
+        response.get();
+      }
     }
   }
-}

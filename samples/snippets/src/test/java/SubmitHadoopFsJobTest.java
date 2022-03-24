@@ -92,7 +92,7 @@ public class SubmitHadoopFsJobTest {
 
     try (ClusterControllerClient clusterControllerClient =
         ClusterControllerClient.create(clusterControllerSettings)) {
-        DeleteClusterRequest.newBuilder()
+        DeleteClusterRequest request = DeleteClusterRequest.newBuilder()
             .setProjectId(PROJECT_ID)
             .setRegion(REGION)
             .setClusterName(CLUSTER_NAME)

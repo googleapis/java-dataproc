@@ -17,12 +17,9 @@
 import static junit.framework.TestCase.assertNotNull;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import com.google.api.gax.longrunning.OperationFuture;
 import com.google.cloud.dataproc.v1.Cluster;
 import com.google.cloud.dataproc.v1.ClusterControllerClient;
 import com.google.cloud.dataproc.v1.ClusterControllerSettings;
-import com.google.cloud.dataproc.v1.ClusterOperationMetadata;
-import com.google.protobuf.Empty;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
@@ -92,11 +89,11 @@ public class SubmitHadoopFsJobTest {
 
     try (ClusterControllerClient clusterControllerClient =
         ClusterControllerClient.create(clusterControllerSettings)) {
-        DeleteClusterRequest.newBuilder()
-            .setProjectId(PROJECT_ID)
-            .setRegion(REGION)
-            .setClusterName(CLUSTER_NAME)
-            .build();
+      DeleteClusterRequest.newBuilder()
+          .setProjectId(PROJECT_ID)
+          .setRegion(REGION)
+          .setClusterName(CLUSTER_NAME)
+          .build();
       clusterControllerClient.deleteClusterAsync(request).get();
     }
   }

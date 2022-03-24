@@ -72,7 +72,7 @@ public class SubmitHadoopFsJobTest {
         ClusterControllerClient.create(clusterControllerSettings)) {
       // Create the Dataproc cluster.
       Cluster cluster = Cluster.newBuilder().setClusterName(CLUSTER_NAME).build();
-      OperationFuture<Cluster, ClusterOperationMetadata> createClusterAsyncRequest =
+      OperationFuture<Cluster, ClusterOperationMetadata, ClusterConfig> createClusterAsyncRequest =
           clusterControllerClient.createClusterAsync(PROJECT_ID, REGION, cluster);
       createClusterAsyncRequest.get();
     }

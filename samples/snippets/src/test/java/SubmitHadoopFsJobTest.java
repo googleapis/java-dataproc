@@ -70,10 +70,10 @@ public class SubmitHadoopFsJobTest {
 
     try (ClusterControllerClient clusterControllerClient =
         ClusterControllerClient.create(clusterControllerSettings)) {
-        Cluster cluster = Cluster.newBuilder().setClusterName(CLUSTER_NAME).build();
-        Cluster response =
+      Cluster cluster = Cluster.newBuilder().setClusterName(CLUSTER_NAME).build();
+      Cluster response =
           clusterControllerClient.createClusterAsync(PROJECT_ID, REGION, cluster).get();
-      }
+    }
   }
 
   @Test

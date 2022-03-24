@@ -89,11 +89,12 @@ public class SubmitHadoopFsJobTest {
 
     try (ClusterControllerClient clusterControllerClient =
         ClusterControllerClient.create(clusterControllerSettings)) {
-        DeleteClusterRequest request = DeleteClusterRequest.newBuilder()
-            .setProjectId(PROJECT_ID)
-            .setRegion(REGION)
-            .setClusterName(CLUSTER_NAME)
-            .build();
+      DeleteClusterRequest request =
+          DeleteClusterRequest.newBuilder()
+              .setProjectId(PROJECT_ID)
+              .setRegion(REGION)
+              .setClusterName(CLUSTER_NAME)
+              .build();
       clusterControllerClient.deleteClusterAsync(request).get();
     }
   }

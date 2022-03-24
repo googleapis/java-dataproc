@@ -21,6 +21,7 @@ import com.google.cloud.dataproc.v1.Cluster;
 import com.google.cloud.dataproc.v1.ClusterControllerClient;
 import com.google.cloud.dataproc.v1.ClusterControllerSettings;
 import com.google.cloud.dataproc.v1.DeleteClusterRequest;
+import com.google.cloud.dataproc.v1.CreateClusterRequest;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
@@ -68,10 +69,13 @@ public class SubmitHadoopFsJobTest {
 
     try (ClusterControllerClient clusterControllerClient =
         ClusterControllerClient.create(clusterControllerSettings)) {
-      Cluster cluster = Cluster.newBuilder().setClusterName(CLUSTER_NAME).build();
-      Cluster response =
-          clusterControllerClient.createClusterAsync(PROJECT_ID, REGION, cluster).get();
-    }
+      CreateClusterRequest request =
+          CreateClusterRequest.newBuilder()
+              .setProjectId(PROJECT_ID)
+              .setRegion(REGION)
+              .setClusterName(CLUSTER_NAME)
+              .build();
+      Cluster response = clusterControllerClient.createlusterAsync(request).get();
   }
 
   @Test
@@ -96,7 +100,7 @@ public class SubmitHadoopFsJobTest {
               .setRegion(REGION)
               .setClusterName(CLUSTER_NAME)
               .build();
-      clusterControllerClient.deleteClusterAsync(request).get();
+      Cluster response = clusterControllerClient.deleteClusterAsync(request).get();
     }
   }
 }

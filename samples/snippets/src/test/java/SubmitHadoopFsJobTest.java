@@ -20,8 +20,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import com.google.cloud.dataproc.v1.Cluster;
 import com.google.cloud.dataproc.v1.ClusterControllerClient;
 import com.google.cloud.dataproc.v1.ClusterControllerSettings;
-import com.google.cloud.dataproc.v1.CreateClusterRequest;
-import com.google.cloud.dataproc.v1.DeleteClusterRequest;
+import com.google.cloud.dataproc.v1.ClusterConfig;
+import com.google.cloud.dataproc.v1.InstanceGroupConfig;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
@@ -69,14 +69,28 @@ public class SubmitHadoopFsJobTest {
 
     try (ClusterControllerClient clusterControllerClient =
         ClusterControllerClient.create(clusterControllerSettings)) {
-      CreateClusterRequest request =
-          CreateClusterRequest.newBuilder()
-              .setProjectId(PROJECT_ID)
-              .setRegion(REGION)
-              .setClusterName(CLUSTER_NAME)
+      // Configure the settings for our cluster.
+      InstanceGroupConfig masterConfig =
+          InstanceGroupConfig.newBuilder()
+              .setMachineTypeUri("n1-standard-2")
+              .setNumInstances(1)
               .build();
-      Cluster response = clusterControllerClient.createClusterAsync(request);
-      response.get();
+      InstanceGroupConfig workerConfig =
+          InstanceGroupConfig.newBuilder()
+              .setMachineTypeUri("n1-standard-2")
+              .setNumInstances(2)
+              .build();
+      ClusterConfig clusterConfig =
+          ClusterConfig.newBuilder()
+              .setMasterConfig(masterConfig)
+              .setWorkerConfig(workerConfig)
+              .build();
+      // Create the Dataproc cluster.
+      Cluster cluster =
+          Cluster.newBuilder().setClusterName(CLUSTER_NAME).setConfig(clusterConfig).build();
+      OperationFuture<Cluster, ClusterOperationMetadata> createClusterAsyncRequest =
+          clusterControllerClient.createClusterAsync(PROJECT_ID, REGION, cluster);
+      createClusterAsyncRequest.get();
     }
   }
 
@@ -96,14 +110,9 @@ public class SubmitHadoopFsJobTest {
 
     try (ClusterControllerClient clusterControllerClient =
         ClusterControllerClient.create(clusterControllerSettings)) {
-      DeleteClusterRequest request =
-          DeleteClusterRequest.newBuilder()
-              .setProjectId(PROJECT_ID)
-              .setRegion(REGION)
-              .setClusterName(CLUSTER_NAME)
-              .build();
-      Cluster response = clusterControllerClient.deleteClusterAsync(request);
-      response.get();
+      OperationFuture<Empty, ClusterOperationMetadata> deleteClusterAsyncRequest =
+          clusterControllerClient.deleteClusterAsync(PROJECT_ID, REGION, CLUSTER_NAME);
+      deleteClusterAsyncRequest.get();
     }
   }
 }

@@ -69,13 +69,29 @@ public class SubmitJobTest {
 
     try (ClusterControllerClient clusterControllerClient =
         ClusterControllerClient.create(clusterControllerSettings)) {
-      // Create the Dataproc cluster.
-      Cluster cluster = Cluster.newBuilder().setClusterName(CLUSTER_NAME).build();
-      OperationFuture<Cluster, ClusterOperationMetadata> createClusterAsyncRequest =
-          clusterControllerClient.createClusterAsync(PROJECT_ID, REGION, cluster);
-      createClusterAsyncRequest.get();
+        // Configure the settings for our cluster.
+          InstanceGroupConfig masterConfig =
+          InstanceGroupConfig.newBuilder()
+              .setMachineTypeUri("n1-standard-2")
+              .setNumInstances(1)
+              .build();
+          InstanceGroupConfig workerConfig =
+          InstanceGroupConfig.newBuilder()
+              .setMachineTypeUri("n1-standard-2")
+              .setNumInstances(2)
+              .build();
+          ClusterConfig clusterConfig =
+          ClusterConfig.newBuilder()
+              .setMasterConfig(masterConfig)
+              .setWorkerConfig(workerConfig)
+              .build();
+        // Create the Dataproc cluster.
+        Cluster cluster = Cluster.newBuilder().setClusterName(CLUSTER_NAME).setConfig(clusterConfig).build();
+        OperationFuture<Cluster, ClusterOperationMetadata> createClusterAsyncRequest =
+            clusterControllerClient.createClusterAsync(PROJECT_ID, REGION, cluster);
+        createClusterAsyncRequest.get();
+      }
     }
-  }
 
   @Test
   public void submitJobTest() throws IOException, InterruptedException {

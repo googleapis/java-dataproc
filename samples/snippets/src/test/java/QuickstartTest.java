@@ -87,6 +87,7 @@ public class QuickstartTest {
   public void quickstartTest() throws IOException, InterruptedException {
     Quickstart.main(PROJECT_ID, REGION, CLUSTER_NAME, JOB_FILE_PATH);
     String output = stdOutCapture.getCapturedOutputAsUtf8String();
+    System.out.println(output);
 
     assertThat(output, CoreMatchers.containsString("Cluster created successfully"));
     assertThat(output, CoreMatchers.containsString("Job finished successfully:"));

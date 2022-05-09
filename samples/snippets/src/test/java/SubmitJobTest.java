@@ -100,6 +100,7 @@ public class SubmitJobTest {
   public void submitJobTest() throws IOException, InterruptedException {
     SubmitJob.submitJob(PROJECT_ID, REGION, CLUSTER_NAME);
     String output = bout.toString();
+    System.out.println(output);
 
     assertThat(output, CoreMatchers.containsString("Job finished successfully"));
   }

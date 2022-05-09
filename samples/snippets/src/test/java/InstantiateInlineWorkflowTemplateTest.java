@@ -57,6 +57,7 @@ public class InstantiateInlineWorkflowTemplateTest {
   public void instanstiateInlineWorkflowTest() throws IOException, InterruptedException {
     InstantiateInlineWorkflowTemplate.instantiateInlineWorkflowTemplate(PROJECT_ID, REGION);
     String output = bout.toString();
+    System.out.println(output);
 
     assertThat(output, CoreMatchers.containsString("successfully"));
   }

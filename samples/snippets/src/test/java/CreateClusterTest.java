@@ -41,7 +41,6 @@ public class CreateClusterTest {
       String.format("java-cc-test-%s", UUID.randomUUID().toString());
   private static final String REGION = "us-central1";
   private static final String PROJECT_ID = System.getenv("GOOGLE_CLOUD_PROJECT");
-  // private static final String PROJECT_ID = "gcloud-devel";
   private ByteArrayOutputStream bout;
 
   private static void requireEnv(String varName) {
@@ -49,6 +48,7 @@ public class CreateClusterTest {
         String.format("Environment variable '%s' is required to perform these tests.", varName),
         System.getenv(varName));
   }
+
   /*
   @BeforeClass
   public static void checkRequirements() {
@@ -66,6 +66,7 @@ public class CreateClusterTest {
   public void createClusterTest() throws IOException, InterruptedException {
     CreateCluster.createCluster(PROJECT_ID, REGION, CLUSTER_NAME);
     String output = bout.toString();
+    System.out.println(output);
 
     assertThat(output, CoreMatchers.containsString(CLUSTER_NAME));
   }

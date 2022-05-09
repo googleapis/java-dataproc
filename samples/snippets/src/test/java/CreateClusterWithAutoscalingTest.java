@@ -99,6 +99,7 @@ public class CreateClusterWithAutoscalingTest {
     CreateClusterWithAutoscaling.createClusterwithAutoscaling(
         PROJECT_ID, REGION, CLUSTER_NAME, AUTOSCALING_POLICY_NAME);
     String output = bout.toString();
+    System.out.println(output);
 
     assertThat(output, CoreMatchers.containsString(CLUSTER_NAME));
   }

@@ -101,6 +101,7 @@ public class SubmitHadoopFsJobTest {
   public void submitHadoopFsJobTest() throws IOException, InterruptedException {
     SubmitHadoopFsJob.submitHadoopFsJob(PROJECT_ID, REGION, CLUSTER_NAME, HADOOP_FS_QUERY);
     String output = bout.toString();
+    System.out.println(output);
 
     assertThat(output, CoreMatchers.containsString("/tmp"));
   }

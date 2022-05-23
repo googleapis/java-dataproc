@@ -22,6 +22,8 @@ import com.google.cloud.dataproc.v1.ClusterControllerClient;
 import com.google.cloud.dataproc.v1.ClusterControllerSettings;
 import com.google.cloud.dataproc.v1.ClusterOperationMetadata;
 import com.google.cloud.dataproc.v1.InstanceGroupConfig;
+import com.google.cloud.dataproc.v1.LifecycleConfig;
+import com.google.protobuf.util.Durations;
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
@@ -64,9 +66,17 @@ public class CreateCluster {
               .setMasterConfig(masterConfig)
               .setWorkerConfig(workerConfig)
               .build();
+      // Configure cluster deletion after 2 hours without submitted jobs.
+      LifecycleConfig lifecycleConfig =
+          LifecycleConfig.newBuilder().setIdleDeleteTtl(Durations.fromHours(2L)).build();
+
       // Create the cluster object with the desired cluster config.
       Cluster cluster =
-          Cluster.newBuilder().setClusterName(clusterName).setConfig(clusterConfig).build();
+          Cluster.newBuilder()
+              .setClusterName(clusterName)
+              .setConfig(clusterConfig)
+              .setLifecycleConfig(lifecycleConfig)
+              .build();
 
       // Create the Cloud Dataproc cluster.
       OperationFuture<Cluster, ClusterOperationMetadata> createClusterAsyncRequest =

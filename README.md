@@ -31,12 +31,6 @@ If you are using Maven with [BOM][libraries-bom], add this to your pom.xml file
     <groupId>com.google.cloud</groupId>
     <artifactId>google-cloud-dataproc</artifactId>
   </dependency>
-  <dependency>
-    <groupId>com.google.cloud</groupId>
-    <artifactId>google-cloud-core</artifactId>
-    <type>test-jar</type>
-    <scope>test</scope>
-  </dependency>
 </dependencies>
 
 ```

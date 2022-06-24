@@ -1,5 +1,40 @@
 # Changelog
 
+## [3.1.2](https://github.com/googleapis/java-dataproc/compare/v3.1.1...v3.1.2) (2022-06-23)
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v2.13.0 ([#870](https://github.com/googleapis/java-dataproc/issues/870)) ([de2c213](https://github.com/googleapis/java-dataproc/commit/de2c2133fdef65dc58d87aa941b5b932a0cd1fdd))
+
+### [3.1.1](https://github.com/googleapis/java-dataproc/compare/v3.1.0...v3.1.1) (2022-05-25)
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-storage to v2.7.0 ([#862](https://github.com/googleapis/java-dataproc/issues/862)) ([29cd497](https://github.com/googleapis/java-dataproc/commit/29cd497e82b69249f1058be873c0312d2eb082ac))
+
+## [3.1.0](https://github.com/googleapis/java-dataproc/compare/v3.0.4...v3.1.0) (2022-05-23)
+
+
+### Features
+
+* add build scripts for native image testing in Java 17 ([#1440](https://github.com/googleapis/java-dataproc/issues/1440)) ([#854](https://github.com/googleapis/java-dataproc/issues/854)) ([90026af](https://github.com/googleapis/java-dataproc/commit/90026af3cc46b2db3dfdc2ebbc7dd5451d015312))
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v2.11.0 ([#853](https://github.com/googleapis/java-dataproc/issues/853)) ([00cdc4e](https://github.com/googleapis/java-dataproc/commit/00cdc4ef6c87347ce2229f8c8a62f6bce05ffed5))
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v2.12.0 ([#855](https://github.com/googleapis/java-dataproc/issues/855)) ([b5d889e](https://github.com/googleapis/java-dataproc/commit/b5d889e6e485c70f5cd893a0355a65b2a76bbdb7))
+* update dependency com.google.cloud:google-cloud-storage to v2.6.1 ([#840](https://github.com/googleapis/java-dataproc/issues/840)) ([fd91c06](https://github.com/googleapis/java-dataproc/commit/fd91c067b8c024cca89844f283e2d3d94563faa6))
+
+### [3.0.4](https://github.com/googleapis/java-dataproc/compare/v3.0.3...v3.0.4) (2022-04-15)
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v2.10.0 ([#836](https://github.com/googleapis/java-dataproc/issues/836)) ([cdd75d5](https://github.com/googleapis/java-dataproc/commit/cdd75d56618bbbcabd919953cb231a364e25fb57))
+
 ### [3.0.3](https://github.com/googleapis/java-dataproc/compare/v3.0.2...v3.0.3) (2022-04-01)
 
 

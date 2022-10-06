@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.8](https://github.com/googleapis/java-dataproc/compare/v4.0.7...v4.0.8) (2022-10-06)
+
+
+### Dependencies
+
+* Update dependency com.google.cloud:google-cloud-storage to v2.13.0 ([#955](https://github.com/googleapis/java-dataproc/issues/955)) ([1e7e031](https://github.com/googleapis/java-dataproc/commit/1e7e0314992012a0c0639003c552f8d78e6a63af))
+
 ## [4.0.7](https://github.com/googleapis/java-dataproc/compare/v4.0.6...v4.0.7) (2022-10-05)
 
 

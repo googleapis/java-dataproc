@@ -52,7 +52,7 @@
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-dataproc</artifactId>
-        <version>4.1.0</version><!-- {x-version-update:google-cloud-dataproc:current} -->
+        <version>4.0.9-SNAPSHOT</version><!-- {x-version-update:google-cloud-dataproc:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>

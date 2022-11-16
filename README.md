@@ -64,13 +64,13 @@ implementation 'com.google.cloud:google-cloud-dataproc'
 If you are using Gradle without BOM, add this to your dependencies:
 
 ```Groovy
-implementation 'com.google.cloud:google-cloud-dataproc:4.2.0'
+implementation 'com.google.cloud:google-cloud-dataproc:4.3.0'
 ```
 
 If you are using SBT, add this to your dependencies:
 
 ```Scala
-libraryDependencies += "com.google.cloud" % "google-cloud-dataproc" % "4.2.0"
+libraryDependencies += "com.google.cloud" % "google-cloud-dataproc" % "4.3.0"
 ```
 
 ## Authentication
